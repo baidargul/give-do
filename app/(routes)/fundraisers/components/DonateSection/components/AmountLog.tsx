@@ -6,7 +6,7 @@ type Props = {}
 const AmountLog = (props: Props) => {
     return (
         <div>
-            <Progress value={12} />
+            <Progress value={34} />
             <div className='flex justify-between items-center mt-4'>
                 <div className='w-[60%]'>
                     <div className='text-xs'>

@@ -1,0 +1,56 @@
+.effect-container {
+    position: relative;
+    overflow: hidden;
+
+    --effect-name: ripple;
+    --effect-duration: 1000ms;
+    --effect-top: 0px;
+    --effect-left: 0px;
+    --effect-height: 1000px;
+    --effect-width: 1000px;
+    --effect-color: "#E7424B";
+}
+
+.effect-container::before {
+    content: "";
+    position: absolute;
+    opacity: 0;
+
+    top: var(--effect-top);
+    left: var(--effect-left);
+    height: var(--effect-height);
+    width: var(--effect-width);
+    border-radius: 50%;
+    transform: scale(0);
+    background-color: var(--effect-color);
+}
+
+.effect-container.active::before {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    top: var(--effect-top);
+    left: var(--effect-left);
+    height: var(--effect-height);
+    width: var(--effect-width);
+    border-radius: 50%;
+    transform: scale(0);
+    background-color: var(--effect-color);
+    animation: ripple var(--effect-duration) linear;
+}
+
+@keyframes ripple {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(6);
+        opacity: 0;
+    }
+}
+
+#button {
+    position: relative;
+    display: inline-block;
+}
