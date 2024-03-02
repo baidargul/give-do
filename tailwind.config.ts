@@ -23,10 +23,12 @@ const config = {
           text: {
             title: "#333333",
             tax_benefits_available: "#D97613",
-            fundraiser_support_description: "#667085"
+            fundraiser_support_description: "#667085",
+            donation_section: "#363F72",
           },
           bg: {
             tax_benefits_available: "#FDF2E2",
+            redHighlight: "#E7424B",
           },
           progressBar: {
             bg: "#E8E8E8",
@@ -34,7 +36,8 @@ const config = {
           },
           section: {
             bg: {
-              support_section: "#FDEEEE"
+              support_section: "#FDEEEE",
+              donation_section: "#EAF2FD",
             }
           },
           button: {
