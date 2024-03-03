@@ -1,6 +1,8 @@
 import React from 'react'
 import AmountLog from './components/AmountLog'
 import DonationNotification from './components/DonationNotification'
+import BtnShare from '@/components/Site/Buttons/BtnShare'
+import ShareButtons from './components/ShareButtons'
 
 type Props = {}
 
@@ -12,6 +14,9 @@ const DonateSection = (props: Props) => {
             </div>
             <div>
                 <DonationNotification />
+            </div>
+            <div>
+                <ShareButtons />
             </div>
         </div>
     )

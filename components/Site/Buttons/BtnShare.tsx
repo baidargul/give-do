@@ -29,7 +29,7 @@ const BtnShare = (props: Props) => {
 
     return (
         <div ref={buttonRef}>
-            <button id='button' className='text-sm text-site-button-share-text min-w-[150px] h-[44px] hover:text-site-button-share-text_hover font-semibold bg-white rounded-md  border border-site-button-share-border drop-shadow-sm'>
+            <button id='button' className='text-sm text-site-button-share-text min-w-[150px] w-full h-[44px] hover:text-site-button-share-text_hover font-semibold bg-white rounded-md  border border-site-button-share-border drop-shadow-sm'>
                 Share
             </button>
         </div>
