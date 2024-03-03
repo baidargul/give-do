@@ -26,6 +26,7 @@ module.exports = {
             secondary: "#EAF2FD",
             accordion: "#F9F8F8",
             footer: "#F8F1F1",
+            disclaimer: "#F3ECEC",
           },
           progressBar: {
             bg: "#E8E8E8",

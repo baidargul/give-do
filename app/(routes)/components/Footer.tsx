@@ -2,13 +2,23 @@ import React from 'react'
 import Link from './Footer/Link'
 import LinkTitle from './Footer/LinkTitle'
 import Links from './Footer/Links'
+import Disclaimer from './Footer/Disclaimer'
 
 type Props = {}
 
 const Footer = (props: Props) => {
     return (
-        <div className='bg-site-bg-footer px-40 pt-8 pb-20 mt-16'>
+        <div className='bg-site-bg-footer px-40 pt-8 pb-36 mt-16'>
             <Links />
+            <Disclaimer />
+            <div className='w-full h-[1px] bg-site-bg-redHighlight/30'></div>
+            <div className='flex justify-between items-center text-[14px] mt-4'>
+                <div>© Give</div>
+                <div className='flex justify-between gap-10'>
+                    <div>Terms</div>
+                    <div>Privacy Policy</div>
+                </div>
+            </div>
         </div>
     )
 }
