@@ -18,7 +18,7 @@ const page = (props: Props) => {
                     Campaign by Social Activities Integration
                 </div>
                 <div>
-                    <Tag />
+                    <Tag type='TAX BENEFITS AVAILABLE' />
                 </div>
             </div>
             <div className="flex justify-between gap-10">

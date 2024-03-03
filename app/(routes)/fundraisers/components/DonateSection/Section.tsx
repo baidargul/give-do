@@ -3,6 +3,7 @@ import AmountLog from './components/AmountLog'
 import DonationNotification from './components/DonationNotification'
 import BtnShare from '@/components/Site/Buttons/BtnShare'
 import ShareButtons from './components/ShareButtons'
+import DonorsSection from './components/Donors/DonorsSection'
 
 type Props = {}
 
@@ -18,7 +19,9 @@ const DonateSection = (props: Props) => {
             <div>
                 <ShareButtons />
             </div>
-            
+            <div>
+                <DonorsSection />
+            </div>
         </div>
     )
 }
