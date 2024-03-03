@@ -21,6 +21,18 @@ const Tag = (props: Props) => {
                 </div>
             )
 
+            case "FIRST DONOR":
+                return (
+                    <div className='text-site-text-tag_first_donor h-[28px] flex justify-center items-center bg-site-bg-tag_first_donor px-[10px] py-[2px] text-center text-[0.75rem] uppercase truncate w-fit font-semibold rounded-full'>
+                        FIRST DONOR
+                    </div>
+                )
+                case "TOP DONOR":
+                    return (
+                        <div className='text-site-text-tag_top_donor h-[28px] flex justify-center items-center bg-site-bg-tag_top_donor px-[10px] py-[2px] text-center text-[0.75rem] uppercase truncate w-fit font-semibold rounded-full'>
+                            TOP DONOR
+                        </div>
+                    )
         default:
             break;
     }

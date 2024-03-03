@@ -19,7 +19,7 @@ const DonateSection = (props: Props) => {
             <div>
                 <ShareButtons />
             </div>
-            <div>
+            <div className='my-4'>
                 <DonorsSection />
             </div>
         </div>

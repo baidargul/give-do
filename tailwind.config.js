@@ -12,12 +12,16 @@ module.exports = {
             title: "#333333",
             tag_tax_benefits_available: "#D97613",
             tag_recent_donor: "rgb(51, 51, 51)",
+            tag_first_donor: "rgb(51, 51, 51)",
+            tag_top_donor: "rgb(51, 51, 51)",
             fundraiser_support_description: "#667085",
             donation_section: "#363F72",
           },
           bg: {
             tag_tax_benefits_available: "#FDF2E2",
             tag_recent_donor: "rgba(242, 201, 76, 0.25)",
+            tag_first_donor: "#EEF4FF",
+            tag_top_donor: "#DBF3E5",
             redHighlight: "#E7424B",
           },
           progressBar: {
