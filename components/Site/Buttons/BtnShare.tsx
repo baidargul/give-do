@@ -2,7 +2,9 @@
 import React, { useEffect, useRef } from 'react'
 import './button.css'
 
-type Props = {}
+type Props = {
+    caption?: string
+}
 
 const BtnShare = (props: Props) => {
     const buttonRef: any = useRef();
@@ -30,7 +32,7 @@ const BtnShare = (props: Props) => {
     return (
         <div ref={buttonRef}>
             <button id='button' className='text-sm text-site-button-share-text min-w-[150px] w-full h-[44px] hover:text-site-button-share-text_hover font-semibold bg-white rounded-md  border border-site-button-share-border drop-shadow-sm'>
-                Share
+                {props.caption? props.caption: "Share"}
             </button>
         </div>
     )
