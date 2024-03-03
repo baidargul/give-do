@@ -16,7 +16,7 @@ const Update = (props: Props) => {
             <p>Take a look at how donated funds will be utilized to keep these kids safe and cared for.
                 Despite the incredible work done so far, SAI needs more funds to achieve its goal of providing a safe home for the minor victims of sexual exploitation. Donate now!
             </p>
-            <Image src="/fundraisers/defaultPostImg.jpg" alt="update" width={400} height={200} />
+            <img src="/fundraisers/defaultPostImg.jpg" alt="update" height={"auto"} className='min-w-[100%]' />
         </div>
     )
 }
