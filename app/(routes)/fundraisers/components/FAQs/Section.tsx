@@ -19,6 +19,7 @@ const FAQSection = (props: Props) => {
 
             <div className='w-[60%]'>
                 <Accordion />
+                This
             </div>
         </div>
     )
