@@ -23,7 +23,8 @@ module.exports = {
             tag_first_donor: "#EEF4FF",
             tag_top_donor: "#DBF3E5",
             redHighlight: "#E7424B",
-            secondary: "#EAF2FD"
+            secondary: "#EAF2FD",
+            accordion: "#F9F8F8",
           },
           progressBar: {
             bg: "#E8E8E8",

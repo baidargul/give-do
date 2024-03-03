@@ -1,3 +1,4 @@
+import Accordion from '@/components/Site/Accordion/Accordion'
 import LinkButton from '@/components/Site/Buttons/LinkButton'
 import React from 'react'
 
@@ -17,7 +18,7 @@ const FAQSection = (props: Props) => {
             </div>
 
             <div className='w-[60%]'>
-
+                <Accordion />
             </div>
         </div>
     )
