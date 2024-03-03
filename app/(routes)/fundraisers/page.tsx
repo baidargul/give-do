@@ -1,6 +1,8 @@
 import Tag from '@/components/Site/Tags/Tag'
 import React from 'react'
 import Body from './components/Body/Body'
+import Image from 'next/image'
+import OrganiserSection from './components/DonateSection/components/Organisers/OrganiserSection'
 
 type Props = {}
 
@@ -21,9 +23,7 @@ const page = (props: Props) => {
             <div>
                 <Body />
             </div>
-            <div>
-                This asdasdas dasd asdasd asdas
-            </div>
+            
         </div>
     )
 }

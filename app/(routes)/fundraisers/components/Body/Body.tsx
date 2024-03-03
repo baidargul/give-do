@@ -4,6 +4,7 @@ import Story from '../Story/Story';
 import UpdateSection from '../Updates/UpdateSection';
 import SupportSection from '../SupportTheFundRaiser/SupportSection';
 import DonateSection from '../DonateSection/Section';
+import OrganiserSection from '../DonateSection/components/Organisers/OrganiserSection';
 
 const Body = () => {
 
@@ -24,8 +25,10 @@ const Body = () => {
                 <div>
                     <SupportSection />
                 </div>
+                <div className='mt-10'>
+                    <OrganiserSection />
+                </div>
             </div>
-
             <div className="right-column w-[35%]">
                 <DonateSection />
             </div>
