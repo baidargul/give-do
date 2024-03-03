@@ -4,6 +4,7 @@ import Body from './components/Body/Body'
 import Image from 'next/image'
 import OrganiserSection from './components/DonateSection/components/Organisers/OrganiserSection'
 import TrustedPlatform from './components/MostTrustedOnlinePlatform/TrustedPlatform'
+import FAQSection from './components/FAQs/Section'
 
 type Props = {}
 
@@ -28,6 +29,9 @@ const page = (props: Props) => {
             </div>
             <div>
                 <TrustedPlatform />
+            </div>
+            <div className=''>
+                <FAQSection />
             </div>
         </div>
     )
