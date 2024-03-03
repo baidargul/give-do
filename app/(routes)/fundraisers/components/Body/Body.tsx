@@ -5,6 +5,7 @@ import UpdateSection from '../Updates/UpdateSection';
 import SupportSection from '../SupportTheFundRaiser/SupportSection';
 import DonateSection from '../DonateSection/Section';
 import OrganiserSection from '../DonateSection/components/Organisers/OrganiserSection';
+import SupportingFundraiserSection from '../Start a Supporting Fundraiser/Section';
 
 const Body = () => {
 
@@ -27,6 +28,9 @@ const Body = () => {
                 </div>
                 <div className='mt-10'>
                     <OrganiserSection />
+                </div>
+                <div className='mt-10'>
+                    <SupportingFundraiserSection />
                 </div>
             </div>
             <div className="right-column w-[35%]">

@@ -8,7 +8,7 @@ type Props = {}
 
 const DonateSection = (props: Props) => {
     return (
-        <div className='p-[32px] sticky top-6 border drop-shadow-lg bg-white rounded-2xl'>
+        <div className='p-[32px] sticky top-12 border drop-shadow-lg bg-white rounded-2xl'>
             <div>
                 <AmountLog />
             </div>
