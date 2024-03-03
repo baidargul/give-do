@@ -47,7 +47,7 @@ const Accordion = (props: Props) => {
                 </div>
             </div>
             <div className={`transition-all duration-500 pt-0 h-0 overflow-hidden ${isToggled ? 'h-auto' : 'h-0'} ${togglePadding && "pt-0"}`}>
-                <p className={`text-sm transition-all duration-500 text-start leading-relaxed font-normal pt-4 ${togglePadding && "pt-0"} transition-all duration-500`}>
+                <p className={`text-sm transition-all duration-500 text-start leading-relaxed font-normal pt-4 ${togglePadding && "pt-0"} transition-all duration-500 pr-10`}>
                     {props.content}
                 </p>
             </div>

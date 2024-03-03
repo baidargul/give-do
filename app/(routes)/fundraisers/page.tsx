@@ -30,7 +30,7 @@ const page = (props: Props) => {
             <div>
                 <TrustedPlatform />
             </div>
-            <div className=''>
+            <div className='mt-10'>
                 <FAQSection />
             </div>
         </div>
