@@ -1,7 +1,6 @@
 import React from 'react'
 import AmountLog from './components/AmountLog'
 import DonationNotification from './components/DonationNotification'
-import BtnShare from '@/components/Site/Buttons/BtnShare'
 import ShareButtons from './components/ShareButtons'
 import DonorsSection from './components/Donors/DonorsSection'
 
@@ -9,7 +8,7 @@ type Props = {}
 
 const DonateSection = (props: Props) => {
     return (
-        <div className='p-[32px] border drop-shadow-lg bg-white rounded-2xl w-full'>
+        <div className='p-[32px] sticky top-6 border drop-shadow-lg bg-white rounded-2xl'>
             <div>
                 <AmountLog />
             </div>

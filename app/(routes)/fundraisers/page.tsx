@@ -1,9 +1,6 @@
 import Tag from '@/components/Site/Tags/Tag'
 import React from 'react'
-import UpdateSection from './components/Updates/UpdateSection'
-import Story from './components/Story/Story'
-import SupportSection from './components/SupportTheFundRaiser/SupportSection'
-import DonateSection from './components/DonateSection/Section'
+import Body from './components/Body/Body'
 
 type Props = {}
 
@@ -21,27 +18,11 @@ const page = (props: Props) => {
                     <Tag type='TAX BENEFITS AVAILABLE' />
                 </div>
             </div>
-            <div className="flex justify-between gap-10">
-                <div className='w-[70%]'>
-                    <div className='border p-2 border-dashed border-slate-400 rounded-md text-center mt-4 h-52 flex items-center justify-between'>
-                        Image / Video
-                    </div>
-                    <div>
-                        <Story />
-                    </div>
-
-                    <div>
-                        <UpdateSection />
-                    </div>
-
-                    <div>
-                        <SupportSection />
-                    </div>
-
-                </div>
-                <div className='w-[38%]'>
-                    <DonateSection />
-                </div>
+            <div>
+                <Body />
+            </div>
+            <div>
+                This asdasdas dasd asdasd asdas
             </div>
         </div>
     )
