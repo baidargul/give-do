@@ -18,6 +18,7 @@ const DonateSection = (props: Props) => {
             <div>
                 <ShareButtons />
             </div>
+            
         </div>
     )
 }
