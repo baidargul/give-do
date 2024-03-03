@@ -1,6 +1,3 @@
-import Seperator from '@/components/Site/Seperator/Seperator'
-import Tag from '@/components/Site/Tags/Tag'
-import Image from 'next/image'
 import React from 'react'
 import Donor from './Donor'
 
