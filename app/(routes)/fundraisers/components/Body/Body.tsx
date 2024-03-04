@@ -35,7 +35,7 @@ const Body = () => {
                 <div className='mt-10 px-4 tablet:px-0'>
                     <OrganiserSection />
                 </div>
-                <div className='mt-10'>
+                <div className='mt-10 px-4 tablet:px-0'>
                     <SupportingFundraiserSection />
                 </div>
             </div>
