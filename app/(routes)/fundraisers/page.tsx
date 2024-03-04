@@ -24,7 +24,7 @@ const page = (props: Props) => {
             <div className='mt-10 px-4 tablet:px-0'>
                 <FAQSection />
             </div>
-            <div className='bg-white p-2 drop-shadow-md w-full absolute'>
+            <div className='bg-white p-2 drop-shadow-md w-full -bottom-1 z-20 fixed'>
                 <BtnShare caption='Give Now'/>
             </div>
         </div>
