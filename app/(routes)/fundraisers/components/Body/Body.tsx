@@ -20,7 +20,7 @@ const Body = () => {
                 <div className='block tablet:hidden'>
                     <DonateSection />
                 </div>
-                <div>
+                <div className=''>
                     <UpdateSection />
                 </div>
                 <div className='block px-4 mb-10 tablet:hidden'>

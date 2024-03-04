@@ -30,7 +30,7 @@ const Update = (props: Props) => {
                     <p className={`${showMore === false && "line-clamp-[5]"}`}>Take a look at how donated funds will be utilized to keep these kids safe and cared for.
                         Despite the incredible work done so far, SAI needs more funds to achieve its goal of providing a safe home for the minor victims of sexual exploitation. Donate now!
                     </p>
-                    <button onClick={handleReadMore} className={`text-site-bg-redHighlight z-10 -bottom-5 absolute tablet:hidden font-medium ${showMore && "-bottom-6"}`}>{showMore ? "Show Less" : "Read More"}</button>
+                    <button onClick={handleReadMore} className={`text-site-bg-redHighlight -bottom-5 absolute tablet:hidden font-medium ${showMore && "-bottom-6"}`}>{showMore ? "Show Less" : "Read More"}</button>
                     <div className={`h-44 w-full bg-gradient-to-t from-white to-transparent absolute bottom-0 ${showMore && "hidden"} tablet:hidden`}></div>
                 </div>
                 <img src="/fundraisers/defaultPostImg.jpg" alt="update" height={"auto"} className='min-w-[100%]' />

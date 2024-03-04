@@ -8,7 +8,7 @@ type Props = {}
 
 const DonorsSection = (props: Props) => {
     return (
-        <div>
+        <div className=''>
             <div className='font-semibold text-lg my-4 tablet:hidden'>
                 953 Donors
             </div>
