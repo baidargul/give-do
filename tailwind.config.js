@@ -82,7 +82,7 @@ module.exports = {
       },
     },
     screens: {
-      'phone': '576px',
+      'phone': '600px',
       // => @media (min-width: 576px) { ... }
 
       'tablet': '960px',

@@ -12,7 +12,7 @@ type Props = {}
 const page = (props: Props) => {
     return (
         <div className='w-full'>
-            <div className="px-40 pt-2">
+            <div className="phone:mx-0 tablet:mx-10 laptop:mx-40">
                 <div>
                     <Title />
                 </div>
@@ -21,10 +21,10 @@ const page = (props: Props) => {
                 </div>
             </div>
             <div>
-                <TrustedPlatform />
+                {/* <TrustedPlatform /> */}
             </div>
             <div className='mt-10'>
-                <FAQSection />
+                {/* <FAQSection /> */}
             </div>
         </div>
     )

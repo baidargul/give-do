@@ -11,12 +11,15 @@ const Body = () => {
 
     return (
         <div className="flex justify-between gap-4 w-full h-full">
-            <div className="left-column w-[60%]">
-                <div className="border p-2 border-dashed border-slate-400 rounded-md text-center mt-4 h-52 flex items-center justify-between">
+            <div className="left-column w-full tablet:w-[60%]">
+                <div className="hidden tablet:flex border p-2 border-dashed border-slate-400 rounded-md text-center mt-4 h-52 items-center justify-between">
                     Image / Video
                 </div>
-                <div>
+                <div className='hidden tablet:block'>
                     <Story />
+                </div>
+                <div className='block tablet:hidden'>
+                    <DonateSection />
                 </div>
 
                 <div>
@@ -33,7 +36,7 @@ const Body = () => {
                     <SupportingFundraiserSection />
                 </div>
             </div>
-            <div className="right-column w-[35%]">
+            <div className="right-column w-[35%] hidden tablet:block">
                 <DonateSection />
             </div>
         </div>
