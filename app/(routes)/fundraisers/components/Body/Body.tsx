@@ -29,7 +29,7 @@ const Body = () => {
                     <DonorsSection />
                 </div>
 
-                <div>
+                <div className='px-4 tablet:px-0'>
                     <SupportSection />
                 </div>
                 <div className='mt-10'>
