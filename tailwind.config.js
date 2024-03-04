@@ -8,6 +8,8 @@ module.exports = {
     extend: {
       colors: {
         site: {
+          redHighlight: "#E7424b",
+          redHighlightHover: "#f48587",
           text: {
             title: "#333333",
             tag_tax_benefits_available: "#D97613",
