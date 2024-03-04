@@ -1,11 +1,9 @@
-import Tag from '@/components/Site/Tags/Tag'
 import React from 'react'
 import Body from './components/Body/Body'
-import Image from 'next/image'
-import OrganiserSection from './components/DonateSection/components/Organisers/OrganiserSection'
 import TrustedPlatform from './components/MostTrustedOnlinePlatform/TrustedPlatform'
 import FAQSection from './components/FAQs/Section'
 import Title from './components/Title/Title'
+import BtnShare from '@/components/Site/Buttons/BtnShare'
 
 type Props = {}
 
@@ -25,6 +23,9 @@ const page = (props: Props) => {
             </div>
             <div className='mt-10 px-4 tablet:px-0'>
                 <FAQSection />
+            </div>
+            <div className='bg-white p-2 drop-shadow-md w-full absolute'>
+                <BtnShare caption='Give Now'/>
             </div>
         </div>
     )
