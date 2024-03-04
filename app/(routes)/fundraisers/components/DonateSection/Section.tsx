@@ -22,7 +22,7 @@ const DonateSection = (props: Props) => {
             <div className='block tablet:hidden'>
                 <Story />
             </div>
-            <div className='my-4'>
+            <div className='my-4 hidden tablet:block'>
                 <DonorsSection />
             </div>
         </div>

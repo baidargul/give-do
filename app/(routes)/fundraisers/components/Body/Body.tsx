@@ -6,6 +6,7 @@ import SupportSection from '../SupportTheFundRaiser/SupportSection';
 import DonateSection from '../DonateSection/Section';
 import OrganiserSection from '../DonateSection/components/Organisers/OrganiserSection';
 import SupportingFundraiserSection from '../Start a Supporting Fundraiser/Section';
+import DonorsSection from '../DonateSection/components/Donors/DonorsSection';
 
 const Body = () => {
 
@@ -21,9 +22,11 @@ const Body = () => {
                 <div className='block tablet:hidden'>
                     <DonateSection />
                 </div>
-
                 <div>
                     <UpdateSection />
+                </div>
+                <div className='block px-4 tablet:hidden'>
+                    <DonorsSection />
                 </div>
 
                 <div>
