@@ -9,7 +9,7 @@ import DonorsSection from '../DonateSection/components/Donors/DonorsSection';
 const Body = () => {
 
     return (
-        <div className="flex justify-between gap-4 w-full h-full">
+        <div className="flex justify-between gap-4 w-full h-full relative">
             <div className="left-column w-full tablet:w-[60%]">
                 <div className="hidden tablet:flex border p-2 border-dashed border-slate-400 rounded-md text-center mt-4 h-52 items-center justify-between">
                     Image / Video
