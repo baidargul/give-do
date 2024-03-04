@@ -4,6 +4,7 @@ import './button.css'
 
 type Props = {
     caption?: string
+    red?: boolean
 }
 
 const BtnShare = (props: Props) => {
@@ -36,7 +37,7 @@ const BtnShare = (props: Props) => {
 
     return (
        isMounted && <div ref={buttonRef}>
-            <button id='button' className='text-sm text-site-button-share-text min-w-[150px] w-full h-[44px] hover:text-site-button-share-text_hover font-semibold bg-white rounded-md  border border-site-button-share-border drop-shadow-sm'>
+            <button id='button' className={`text-sm ${props.red && "text-white bg-site-bg-redHighlight"} text-site-button-share-text min-w-[150px] w-full h-[44px] hover:text-site-button-share-text_hover font-semibold bg-white rounded-md  border border-site-button-share-border drop-shadow-sm`}>
                 {props.caption? props.caption: "Share"}
             </button>
         </div>

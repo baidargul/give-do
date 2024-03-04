@@ -25,7 +25,7 @@ const page = (props: Props) => {
                 <FAQSection />
             </div>
             <div className='bg-white p-3 w-full bottom-0 z-20 fixed' style={{ boxShadow: "0px -4px 10px 0px rgba(0, 0, 0, 0.16)" }}>
-                <BtnShare caption='Give Now' />
+                <BtnShare caption='Give Now' red />
             </div>
         </div>
     )
