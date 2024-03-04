@@ -1,5 +1,3 @@
-'use client'
-import React, { useEffect, useRef } from 'react';
 import Story from '../Story/Story';
 import UpdateSection from '../Updates/UpdateSection';
 import SupportSection from '../SupportTheFundRaiser/SupportSection';

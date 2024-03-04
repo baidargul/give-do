@@ -12,6 +12,11 @@ const Accordion = (props: Props) => {
     const [isToggled, setIsToggled] = useState(false)
     const [togglePadding, setTogglePadding] = useState(false)
     const [selected, setSelected] = useState<boolean>(false)
+    const [isMounted, setIsMounted] = React.useState(false)
+
+    useEffect(() => {
+        setIsMounted(true)
+    }, [])
 
     useEffect(() => {
         setSelected(props.isSelected ? true : false)
@@ -37,7 +42,7 @@ const Accordion = (props: Props) => {
     }
 
     return (
-        <button onClick={handleToggle} className='bg-site-bg-accordion transition-all duration-500 p-5 tablet:p-8 rounded-2xl text-site-text-tag_first_donor tablet:text-[1.125rem] font-semibold cursor-pointer'>
+        isMounted && <button onClick={handleToggle} className='bg-site-bg-accordion transition-all duration-500 p-5 tablet:p-8 rounded-2xl text-site-text-tag_first_donor tablet:text-[1.125rem] font-semibold cursor-pointer'>
             <div className='flex justify-between items-center transition-all duration-500'>
                 <div className='text-start w-[90%]'>
                     {props.title}

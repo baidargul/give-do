@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 type Props = {
     date?: string,
@@ -11,13 +11,18 @@ type Props = {
 
 const Update = (props: Props) => {
     const [showMore, setShowMore] = React.useState(false)
+    const [isMounted, setIsMounted] = React.useState(false)
+
+    useEffect(() => {
+        setIsMounted(true)
+    }, [])
 
     const handleReadMore = () => {
         setShowMore(!showMore)
     }
 
     return (
-        <div className='w-full'>
+      isMounted &&  <div className='w-full'>
             <div className='flex flex-col gap-10 tablet:gap-4'>
                 <div className='relative'>
                     <div className="font-semibold  tracking-wide text-md">15 Feb, 2024</div>

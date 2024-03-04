@@ -8,6 +8,11 @@ type Props = {
 
 const BtnShare = (props: Props) => {
     const buttonRef: any = useRef();
+    const [isMounted, setIsMounted] = React.useState(false)
+
+    useEffect(() => {
+        setIsMounted(true)
+    }, [])
 
     useEffect(() => {
         const applyContainerProperties = () => {
@@ -30,7 +35,7 @@ const BtnShare = (props: Props) => {
     }, [])
 
     return (
-        <div ref={buttonRef}>
+       isMounted && <div ref={buttonRef}>
             <button id='button' className='text-sm text-site-button-share-text min-w-[150px] w-full h-[44px] hover:text-site-button-share-text_hover font-semibold bg-white rounded-md  border border-site-button-share-border drop-shadow-sm'>
                 {props.caption? props.caption: "Share"}
             </button>

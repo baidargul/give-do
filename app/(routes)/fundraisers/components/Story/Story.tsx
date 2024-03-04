@@ -1,17 +1,22 @@
 'use client'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 type Props = {}
 
 const Story = (props: Props) => {
     const [showMore, setShowMore] = React.useState(false)
+    const [isMounted, setIsMounted] = React.useState(false)
+
+    useEffect(() => {
+        setIsMounted(true)
+    }, [])
 
     const handleReadMore = () => {
         setShowMore(!showMore)
     }
 
     return (
-        <div className='mb-5 target:mb-0'>
+        isMounted && <div className='mb-5 target:mb-0'>
             <div className="text-xl my-4 mt-5 tablet:text-[32px] tablet:my-5 tablet:mt-8 font-semibold">Story</div>
             <div className='relative'>
                 <p className={`${showMore === false && "line-clamp-[14]"} transition-all duration-500 overflow-hidden tablet:overflow-visible tablet:line-clamp-none`}>“I saw a girl, barely 7 or 8, being pushed into flesh trade. Her cries for help still echo in my ears. There were men as old as 60 r*ping the innocent child. That was the day I knew my mission in life was to get these children out of the hell-like conditions in red-light areas. They are nothing short of hell and no child deserves to grow up in this environment” says Vinay Vasta, founder of Social Activities Integration, an organisation committed to freeing children trapped in red-light areas.

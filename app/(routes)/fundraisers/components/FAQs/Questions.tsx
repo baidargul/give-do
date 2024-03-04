@@ -1,6 +1,6 @@
 'use client'
 import Accordion from '@/components/Site/Accordion/Accordion'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const data = [
     {
@@ -30,9 +30,14 @@ type Props = {}
 
 const Questions = (props: Props) => {
     const [selected, setSelected] = React.useState<number | null>(0)
+    const [isMounted, setIsMounted] = React.useState(false)
+
+    useEffect(() => {
+        setIsMounted(true)
+    }, [])
 
     return (
-        <div className='flex flex-col gap-4'>
+        isMounted && <div className='flex flex-col gap-4'>
             {
                 data.map((item, index) => (
                     <button onClick={() => setSelected(index)}>
