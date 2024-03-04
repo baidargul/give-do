@@ -24,8 +24,8 @@ const page = (props: Props) => {
             <div className='mt-10 px-4 tablet:px-0'>
                 <FAQSection />
             </div>
-            <div className='bg-white p-2 drop-shadow-md w-full -bottom-1 z-20 fixed'>
-                <BtnShare caption='Give Now'/>
+            <div className='bg-white p-3 w-full bottom-0 z-20 fixed' style={{ boxShadow: "0px -4px 10px 0px rgba(0, 0, 0, 0.16)" }}>
+                <BtnShare caption='Give Now' />
             </div>
         </div>
     )
