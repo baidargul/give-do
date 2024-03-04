@@ -7,7 +7,7 @@ type Props = {
 
 const Link = (props: Props) => {
     return (
-        <div className='flex flex-col gap-4 text-site-text-fundraiser_support_description cursor-pointer'>
+        <div className='flex flex-col font-medium tablet:font-normal gap-4 text-site-text-fundraiser_support_description cursor-pointer'>
             {props.name}
         </div>
     )
