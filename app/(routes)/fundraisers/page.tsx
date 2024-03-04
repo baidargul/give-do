@@ -20,8 +20,8 @@ const page = (props: Props) => {
                     <Body />
                 </div>
             </div>
-            <div>
-                {/* <TrustedPlatform /> */}
+            <div className=''>
+                <TrustedPlatform />
             </div>
             <div className='mt-10'>
                 {/* <FAQSection /> */}
