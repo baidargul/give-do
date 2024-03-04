@@ -36,7 +36,9 @@ const Questions = (props: Props) => {
             {
                 data.map((item, index) => (
                     <button onClick={() => setSelected(index)}>
-                        <Accordion key={index} title={item.title} content={item.content} isSelected={selected === index} />
+                        <div key={index}>
+                            <Accordion title={item.title} content={item.content} isSelected={selected === index} />
+                        </div>
                     </button>
                 ))
             }

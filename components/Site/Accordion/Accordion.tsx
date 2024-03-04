@@ -37,9 +37,9 @@ const Accordion = (props: Props) => {
     }
 
     return (
-        <button onClick={handleToggle} className='bg-site-bg-accordion transition-all duration-500 p-8 rounded-2xl text-site-text-tag_first_donor text-[1.125rem] font-semibold cursor-pointer'>
+        <button onClick={handleToggle} className='bg-site-bg-accordion transition-all duration-500 p-5 tablet:p-8 rounded-2xl text-site-text-tag_first_donor tablet:text-[1.125rem] font-semibold cursor-pointer'>
             <div className='flex justify-between items-center transition-all duration-500'>
-                <div className='text-start'>
+                <div className='text-start w-[90%]'>
                     {props.title}
                 </div>
                 <div>

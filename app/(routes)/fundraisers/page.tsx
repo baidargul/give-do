@@ -23,8 +23,8 @@ const page = (props: Props) => {
             <div className=''>
                 <TrustedPlatform />
             </div>
-            <div className='mt-10'>
-                {/* <FAQSection /> */}
+            <div className='mt-10 px-4 tablet:px-0'>
+                <FAQSection />
             </div>
         </div>
     )
