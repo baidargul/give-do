@@ -6,10 +6,14 @@ type Props = {}
 const OrganiserSection = (props: Props) => {
     return (
         <div>
-            <div className="text-[32px] my-2 font-semibold mb-4">Organisers</div>
-            <div className='flex justify-between items-center gap-4'>
-                <Organiser name='Social Activities Integration' subText='Beneficiary Charity' key={1} />
-                <Organiser name='Give' subText='Organiser' key={2} />
+            <div className="text-lg tablet:text-[32px] my-2 font-semibold mb-4">Organisers</div>
+            <div className='tablet:flex justify-between items-center gap-4'>
+                <div key={1} className='mt-4'>
+                    <Organiser name='Social Activities Integration' subText='Beneficiary Charity' />
+                </div>
+                <div key={2} className='mt-4'>
+                    <Organiser name='Give' subText='Organiser' />
+                </div>
             </div>
         </div>
     )
