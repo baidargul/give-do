@@ -25,7 +25,7 @@ const Body = () => {
                 <div>
                     <UpdateSection />
                 </div>
-                <div className='block px-4 tablet:hidden'>
+                <div className='block px-4 mb-10 tablet:hidden'>
                     <DonorsSection />
                 </div>
 
