@@ -12,7 +12,9 @@ const ShareButtons = (props: Props) => {
             <div className='text-center text-site-text-fundraiser_support_description text-sm'>
                 299 shares! Every share counts.
             </div>
-            <Seperator type='horizontal' />
+            <div className='hidden tablet:block'>
+                <Seperator type='horizontal' />
+            </div>
         </div>
     )
 }

@@ -9,12 +9,12 @@ type Props = {}
 
 const DonateSection = (props: Props) => {
     return (
-        <div className='p-4 tablet:p-[32px] sticky top-12 tablet:border drop-shadow-lg bg-white rounded-2xl'>
+        <div className='p-4 tablet:p-[32px] sticky top-12 tablet:border tablet:drop-shadow-lg bg-white tablet:rounded-2xl'>
             <div>
                 <AmountLog />
             </div>
             <div>
-                {/* <DonationNotification /> */}
+                <DonationNotification />
             </div>
             <div>
                 <ShareButtons />
