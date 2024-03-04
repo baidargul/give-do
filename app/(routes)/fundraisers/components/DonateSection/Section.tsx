@@ -23,7 +23,7 @@ const DonateSection = (props: Props) => {
 
     return (
         <div>
-            <div className={`bg-white p-3 w-full bottom-0 left-0 fixed z-[200] ${giveNowButtonVisibility && "hidden"}`} style={{ boxShadow: "0px -4px 10px 0px rgba(0, 0, 0, 0.16)" }}>
+            <div className={`bg-white p-3 w-full bottom-0 left-0 fixed z-[200] ${giveNowButtonVisibility && "hidden"} tablet:hidden`} style={{ boxShadow: "0px -4px 10px 0px rgba(0, 0, 0, 0.16)" }}>
                 <BtnShare caption='Give Now' red />
             </div>
             <div className='p-4 tablet:p-[32px] sticky top-12 tablet:border tablet:drop-shadow-lg bg-white tablet:rounded-2xl'>

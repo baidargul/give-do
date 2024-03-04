@@ -13,7 +13,7 @@ const SupportSection = (props: Props) => {
                 </div>
                 <div className='tablet:flex tablet:gap-3'>
                     <div className='mt-3 tablet:mt-0'>
-                        <BtnShare />
+                        <BtnShare red caption='Give Now' />
                     </div>
                     <div className='mt-3 tablet:mt-0'>
                         <BtnShare />

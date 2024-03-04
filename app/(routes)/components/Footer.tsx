@@ -6,7 +6,7 @@ type Props = {}
 
 const Footer = (props: Props) => {
     return (
-        <div className='bg-site-bg-footer px-4 tablet:px-40 pt-8 pb-14 tablet:pb-26 mt-16'>
+        <div className='bg-site-bg-footer px-4 tablet:px-40 pt-8 pb-24 tablet:pb-26 mt-16'>
             <Links />
             <Disclaimer />
             <div className='w-full h-[1px] bg-site-bg-redHighlight/30'></div>
