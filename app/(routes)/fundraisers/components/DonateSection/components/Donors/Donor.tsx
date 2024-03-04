@@ -13,12 +13,12 @@ const Donor = (props: Props) => {
     return (
         <div className='flex gap-4 items-center'>
             <div>
-                <Image src='/profiles/default.jpg' width={50} height={50} alt='donor' />
+                <Image src='/profiles/default.jpg' width={50} height={50} className='w-[65px] h-[65px] tablet:w-[50px] tablet:h-[50px]' alt='donor' />
             </div>
             <div className='flex flex-col gap-1'>
-                <div className='text-[1rem] font-medium'>{props.name}</div>
+                <div className='text-[1rem] font-semibold text-site-text-tag_first_donor tablet:font-medium'>{props.name}</div>
                 <div className='flex items-center gap-2'>
-                    <div>
+                    <div className='text-site-text-fundraiser_support_description'>
                         ₹{props.amount}
                     </div>
                     <Seperator type='dotted' />

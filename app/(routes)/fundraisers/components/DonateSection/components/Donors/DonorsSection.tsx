@@ -9,7 +9,7 @@ type Props = {}
 const DonorsSection = (props: Props) => {
     return (
         <div>
-            <div className='flex flex-col gap-4'>
+            <div className='flex flex-col gap-6 tablet:gap-4'>
                 <Donor name='Zainul Abidin' amount={50} type='RECENT DONOR' key={1} />
                 <Donor name='Anonymous' amount={1500} type='FIRST DONOR' key={2} />
                 <Donor name='Anonymous' amount={56000} type='TOP DONOR' key={3} />
