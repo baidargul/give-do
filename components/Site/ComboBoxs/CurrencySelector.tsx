@@ -10,6 +10,7 @@ type Props = {
 }
 
 export default function CurrencySelector(props: Props) {
+  const [isMounted, setIsMounted] = useState(false)
   const [selectedCurrency, setSelectedCurrency] = useState(currencies[0])
   const [triggerDropDown, setTriggerDropDown] = useState(false)
 
@@ -25,8 +26,12 @@ export default function CurrencySelector(props: Props) {
     }
   }
 
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
+
   return (
-    <div className="relative">
+    isMounted && <div className="relative">
       <div onClick={SelectClick} className="border border-slate-300 p-3 w-[120px] h-fit flex justify-evenly cursor-pointer bg-white items-center rounded-lg">
         <div className="text-site-text-tag_first_donor">
           {selectedCurrency ? selectedCurrency : null}
