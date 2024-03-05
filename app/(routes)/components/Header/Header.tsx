@@ -11,7 +11,10 @@ const Header = (props: Props) => {
                 <Image src={"/logo.png"} width={92.63} height={44} className='w-[92.63px] h-[44px]' alt='site-logo' />
             </div>
             <div className='flex justify-between gap-4 items-center'>
-                <div className='hidden tablet:block'>Find Fundraisers</div>
+                <div className='flex gap-2 items-center'>
+                    <div className='pointer-events-none fill-site-redHighlight'><Image src={"/other/searchRed.png"} width={18} height={18} alt='find fundraisers' /></div>
+                    <div className='hidden tablet:block text-[16px] text-site-text-fundraiser_support_description'>Find Fundraisers</div>
+                </div>
                 <div className='hidden tablet:block'><CurrencySelector /></div>
                 <div>
                     <Image src={"/profiles/default.jpg"} width={40} height={40} className='w-[40px] h-[40px] rounded-full' alt='user' />
