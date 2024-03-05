@@ -30,7 +30,7 @@ const Links = (props: Props) => {
                 <Link name='NGOs' />
             </div>
             <div className='flex flex-col gap-2 tablet:gap-4'>
-                <div><CurrencySelector /></div>
+                <div className='w-fit'><CurrencySelector /></div>
                 <div>Social Media Icons</div>
             </div>
         </div>
