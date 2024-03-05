@@ -6,11 +6,11 @@ type Props = {}
 const Title = (props: Props) => {
     return (
         <div className=''>
-            <div className="tablet:hidden border mb-5 p-2 border-dashed border-slate-400 rounded-md text-center w-full tablet:w-[790.4px] tablet:h-[400px] h-[200px] flex items-center justify-between">
+            <div className="tablet:hidden border mb-1 tablet:mb-5 p-2 border-dashed border-slate-400 rounded-md text-center w-full tablet:w-[790.4px] tablet:h-[400px] h-[200px] flex items-center justify-between">
                 Image / Video
             </div>
             <div className='p-4 tablet:p-0'>
-                <div className='block  tablet:hidden'>
+                <div className='block tablet:hidden mb-4 tablet:mb-0'>
                     <Tag type='TAX BENEFITS AVAILABLE' />
                 </div>
                 <div className="font-bold text-site-text-title text-[1.125rem] tablet:text-[2.5rem] leading-tight tracking-tight my-2">
