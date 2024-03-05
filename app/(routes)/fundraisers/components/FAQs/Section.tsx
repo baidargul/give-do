@@ -6,8 +6,7 @@ type Props = {}
 const FAQSection = (props: Props) => {
     return (
         <div className='tablet:px-40 pt-2 flex flex-col tablet:flex-row justify-between gap-5'>
-
-            <div className='tablet:w-[40%]'>
+            <div className='tablet:w-[43%]'>
                 <div className="text-lg tablet:text-[32px] my-2 font-semibold">FAQs</div>
                 <div>
                     <div className=''>Everything you need to know about the fundraiser and your donation. Can’t find the answer you are looking for?
