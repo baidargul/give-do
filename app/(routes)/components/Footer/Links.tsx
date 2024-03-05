@@ -1,6 +1,7 @@
 import React from 'react'
 import LinkTitle from './LinkTitle'
 import Link from './Link'
+import CurrencySelector from '@/components/Site/ComboBoxs/CurrencySelector'
 
 type Props = {}
 
@@ -28,7 +29,10 @@ const Links = (props: Props) => {
                 <Link name='Social Causes' />
                 <Link name='NGOs' />
             </div>
-            <div>Currency</div>
+            <div className='flex flex-col gap-2 tablet:gap-4'>
+                <div><CurrencySelector /></div>
+                <div>Social Media Icons</div>
+            </div>
         </div>
     )
 }
