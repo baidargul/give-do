@@ -13,7 +13,9 @@ const Header = (props: Props) => {
             <div className='flex justify-between gap-4 items-center'>
                 <div className='hidden tablet:block'>Find Fundraisers</div>
                 <div className='hidden tablet:block'><CurrencySelector /></div>
-                <div>Account</div>
+                <div>
+                    <Image src={"/profiles/default.jpg"} width={40} height={40} className='w-[40px] h-[40px] rounded-full' alt='user' />
+                </div>
             </div>
         </div>
     )

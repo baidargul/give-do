@@ -25,6 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <meta name="theme-color" content="#E7424b"></meta>
       <body className={poppins.className}>
         <div className="">
           <div className="">
