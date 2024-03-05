@@ -8,9 +8,9 @@ const AmountLog = (props: Props) => {
         <div>
             <Progress value={34} />
             <div className='flex justify-between items-center mt-4'>
-                <div className='w-[60%]'>
-                    <div className='text-xs'>
-                        <div className='text-lg tracking-wide'>
+                <div className='tablet:w-[60%]'>
+                    <div className='text-[0.875rem]'>
+                        <div className='text-lg tracking-wide text-[1.125rem]'>
                             $18,496
                         </div>
                         <div className='flex gap-1 items-center'>
@@ -19,12 +19,12 @@ const AmountLog = (props: Props) => {
                         </div>
                     </div>
                 </div>
-                <div className='w-[40%] flex items-center gap-4'>
+                <div className='tablet:w-[40%] flex items-center gap-4'>
                     <div className='text-xs'>
                         <div className='text-lg tracking-wide'>
                             947
                         </div>
-                        <div className='flex gap-1 items-center'>
+                        <div className='flex gap-1 items-center text-[0.875rem]'>
                             <span>Supporters</span>
                         </div>
                     </div>
@@ -32,7 +32,7 @@ const AmountLog = (props: Props) => {
                         <div className='text-lg tracking-wide'>
                             4
                         </div>
-                        <div className='flex gap-1 items-center'>
+                        <div className='flex gap-1 items-center text-[0.875rem]'>
                             <span>Days Left</span>
                         </div>
                     </div>
