@@ -42,7 +42,7 @@ const Accordion = (props: Props) => {
     }
 
     return (
-        isMounted && <button onClick={handleToggle} className='bg-site-bg-accordion transition-all duration-500 p-5 tablet:p-8 rounded-2xl text-site-text-tag_first_donor tablet:text-[1.125rem] font-semibold cursor-pointer'>
+        isMounted && <div onClick={handleToggle} className='bg-site-bg-accordion transition-all duration-500 p-5 tablet:p-8 rounded-2xl text-site-text-tag_first_donor tablet:text-[1.125rem] font-semibold cursor-pointer'>
             <div className='flex justify-between items-center transition-all duration-500'>
                 <div className='text-start w-[90%]'>
                     {props.title}
@@ -57,7 +57,7 @@ const Accordion = (props: Props) => {
                 </p>
             </div>
 
-        </button>
+        </div>
     )
 }
 
