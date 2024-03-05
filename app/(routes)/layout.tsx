@@ -27,7 +27,6 @@ export default function RootLayout({
       <meta name="theme-color" content="#E7424b"></meta>
       <body className={poppins.className}>
         <div className="">
-          <HomepageNav />
           <div className="">
             {children}
           </div>
