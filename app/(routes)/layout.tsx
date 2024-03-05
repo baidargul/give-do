@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import HomepageNav from "./components/Header/HomepageNav";
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
@@ -26,6 +27,7 @@ export default function RootLayout({
       <meta name="theme-color" content="#E7424b"></meta>
       <body className={poppins.className}>
         <div className="">
+          <HomepageNav />
           <div className="">
             {children}
           </div>

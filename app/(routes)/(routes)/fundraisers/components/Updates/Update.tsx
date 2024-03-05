@@ -33,7 +33,7 @@ const Update = (props: Props) => {
                     <button onClick={handleReadMore} className={`text-site-bg-redHighlight -bottom-5 absolute tablet:hidden font-medium ${showMore && "-bottom-6"}`}>{showMore ? "Show Less" : "Read More"}</button>
                     <div className={`h-44 w-full bg-gradient-to-t from-white to-transparent absolute bottom-0 ${showMore && "hidden"} tablet:hidden`}></div>
                 </div>
-                <img src="/fundraisers/defaultPostImg.jpg" alt="update" height={"auto"} className='min-w-[100%]' />
+                <img src="/fundraisers/defaultPostImg.jpg" alt="update" className='min-w-[100%] w-auto h-auto' />
             </div>
         </div>
     )

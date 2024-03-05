@@ -40,8 +40,8 @@ const Questions = (props: Props) => {
         isMounted && <div className='flex flex-col gap-4'>
             {
                 data.map((item, index) => (
-                    <button onClick={() => setSelected(index)}>
-                        <div key={index}>
+                    <button  key={index} onClick={() => setSelected(index)}>
+                        <div>
                             <Accordion title={item.title} content={item.content} isSelected={selected === index} />
                         </div>
                     </button>
