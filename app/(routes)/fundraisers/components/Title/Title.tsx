@@ -13,7 +13,7 @@ const Title = (props: Props) => {
                 <div className='block  tablet:hidden'>
                     <Tag type='TAX BENEFITS AVAILABLE' />
                 </div>
-                <div className="font-bold text-site-text-title text-[1.125rem] tablet:text-4xl my-2">
+                <div className="font-bold text-site-text-title text-[1.125rem] tablet:text-[2.5rem] leading-tight tracking-tight my-2">
                     Help Vinay bring children facing abuse in red-light areas to safety and protect them
                 </div>
                 <div className="text-lg flex gap-1 items-center">
