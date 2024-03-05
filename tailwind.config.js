@@ -29,6 +29,7 @@ module.exports = {
             accordion: "#F9F8F8",
             footer: "#F8F1F1",
             disclaimer: "#F3ECEC",
+            currencyDropDownHover:"rgba(253,242,226,.5)",
           },
           progressBar: {
             bg: "#E8E8E8",
