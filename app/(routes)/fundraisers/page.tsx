@@ -3,7 +3,6 @@ import Body from './components/Body/Body'
 import TrustedPlatform from './components/MostTrustedOnlinePlatform/TrustedPlatform'
 import FAQSection from './components/FAQs/Section'
 import Title from './components/Title/Title'
-import BtnShare from '@/components/Site/Buttons/BtnShare'
 
 type Props = {}
 

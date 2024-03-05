@@ -6,7 +6,7 @@ type Props = {}
 const Title = (props: Props) => {
     return (
         <div className=''>
-            <div className="tablet:hidden border mb-5 p-2 border-dashed border-slate-400 rounded-md text-center w-[790.4px] h-[400px] flex items-center justify-between">
+            <div className="tablet:hidden border mb-5 p-2 border-dashed border-slate-400 rounded-md text-center w-full tablet:w-[790.4px] h-[400px] flex items-center justify-between">
                 Image / Video
             </div>
             <div className='p-4 tablet:p-0'>
