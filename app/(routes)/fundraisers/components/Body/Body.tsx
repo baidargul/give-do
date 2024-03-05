@@ -5,14 +5,18 @@ import DonateSection from '../DonateSection/Section';
 import OrganiserSection from '../DonateSection/components/Organisers/OrganiserSection';
 import SupportingFundraiserSection from '../Start a Supporting Fundraiser/Section';
 import DonorsSection from '../DonateSection/components/Donors/DonorsSection';
+import DonateViaSection from '../DonateVia/DonateViaSection';
 
 const Body = () => {
 
     return (
-        <div className="flex justify-between gap-4 w-full h-full relative">
-            <div className="left-column w-full tablet:w-[60%]">
+        <div className="flex justify-between gap-8 w-full h-full relative">
+            <div className="left-column w-full tablet:w-[68%]">
                 <div className="hidden tablet:flex border p-2 border-dashed border-slate-400 rounded-md text-center mt-4 h-52 items-center justify-between">
                     Image / Video
+                </div>
+                <div className='hidden tablet:block'>
+                    <DonateViaSection />
                 </div>
                 <div className='hidden tablet:block'>
                     <Story />

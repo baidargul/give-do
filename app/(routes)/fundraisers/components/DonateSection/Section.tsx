@@ -6,6 +6,7 @@ import ShareButtons from './components/ShareButtons'
 import DonorsSection from './components/Donors/DonorsSection'
 import Story from '../Story/Story'
 import BtnShare from '@/components/Site/Buttons/BtnShare'
+import DonateViaSection from '../DonateVia/DonateViaSection'
 
 type Props = {}
 
@@ -35,6 +36,9 @@ const DonateSection = (props: Props) => {
                 </div>
                 <div>
                     <ShareButtons giveNowRef={giveNowButton} />
+                </div>
+                <div className='block tablet:hidden'>
+                    <DonateViaSection/>
                 </div>
                 <div className='block tablet:hidden'>
                     <Story />
