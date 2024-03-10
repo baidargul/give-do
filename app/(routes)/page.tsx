@@ -1,5 +1,6 @@
 import { HomepageCoursel } from "@/components/Site/Carousel/Homepage/HomepageCoursel";
 import HomepageNav from "./components/Header/HomepageNav";
+import GiveMonthly from "./components/Header/GiveMonthly";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       </div>
       <div>
         <div className="phone:mx-0 tablet:mx-10 laptop:mx-40">
+          <GiveMonthly/>
         </div>
       </div>
     </div>

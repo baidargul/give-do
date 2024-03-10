@@ -5,7 +5,7 @@ type Props = {}
 
 const HomepageNav = (props: Props) => {
     return (
-        <div className='flex justify-between items-center phone:mx-0 tablet:mx-10 laptop:mx-40 mb-2 tablet:mb-5 px-4 py-[18px] h-[74px] tablet:px-0'>
+        <div className='flex justify-between items-center phone:mx-0 tablet:mx-10 laptop:mx-40 mb-2 tablet:mb-5 pt-5 px-4 tablet:px-0'>
             <div>
                 <Image src={"/logo.png"} width={92.63} height={44} className='w-[92.63px] h-[44px]' alt='site-logo' />
             </div>
