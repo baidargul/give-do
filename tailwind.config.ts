@@ -20,7 +20,8 @@ const config = {
     extend: {
       colors: {
         site: {
-          redHighlight: "#E7424B",
+          redHighlight: "#E7424b",
+          redHighlightHover: "#f48587",
           text: {
             title: "#333333",
             tag_tax_benefits_available: "#D97613",
@@ -40,6 +41,7 @@ const config = {
             accordion: "#F9F8F8",
             footer: "#F8F1F1",
             disclaimer: "#F3ECEC",
+            currencyDropDownHover:"rgba(253,242,226,.5)",
           },
           progressBar: {
             bg: "#E8E8E8",

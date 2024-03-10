@@ -1,14 +1,15 @@
 'use client'
 import * as React from "react"
+import { useEffect, useState } from "react"
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel"
 import Image from "next/image"
 import Autoplay from "embla-carousel-autoplay"
+import { type CarouselApi } from "@/components/ui/carousel"
+
 
 const images = [
   {
@@ -44,10 +45,36 @@ const images = [
 ]
 
 export function HomepageCoursel() {
+  const [api, setApi] = useState<CarouselApi>()
+  const [current, setCurrent] = React.useState(0)
+  const [count, setCount] = React.useState(0)
+
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1)
+    })
+
+    setCount(api.scrollSnapList().length);
+  }, [api]);
+
+
+  const handleClick = (index: number) => {
+    if (api) {
+      api.scrollTo(index);
+    }
+  }
+
+  useEffect(() => {
+    console.log(current)
+  }, [current])
 
   return (
     <div className="relative">
-      <Carousel className="w-full" opts={{ loop: true, align: "start" }} plugins={[Autoplay({ delay: 2000, }),]}>
+      <Carousel className="w-full" opts={{ loop: true, align: "start" }} plugins={[Autoplay({ delay: 5000, }),]} setApi={setApi}>
         <CarouselContent>
           {images.map((image, index) => (
             <CarouselItem key={index}>
@@ -64,10 +91,10 @@ export function HomepageCoursel() {
 
             <div className={`grid grid-cols-6 w-fit gap-4  justify-center items-center justify-items-center `}>
               {
-                images.map((image, index) => {
-
+                images.map((_, index) => {
+                  const thisSlide = index + 1;
                   return (
-                    <div className="bg-site-text-fundraiser_support_description w-[32px] h-[5px] " key={index}>
+                    <div className={`${current.toString()===thisSlide.toString() && "bg-red-500"} bg-site-text-fundraiser_support_description w-[32px] h-[7px] cursor-pointer hover:bg-site-redHighlight/90`} key={index} onClick={() => { handleClick(index) }} >
                     </div>
                   )
                 })
