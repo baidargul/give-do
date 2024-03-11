@@ -1,13 +1,14 @@
 import Image from 'next/image'
 import React from 'react'
 import BottomSection from './BottomSection'
+import BtnShare from '../../Buttons/BtnShare'
 
 
 type Props = {}
 
 const MissionCard = (props: Props) => {
     return (
-        <div className='drop-shadow-md bg-white rounded-2xl hover:scale-105 transition-all'>
+        <div className='drop-shadow-md bg-white rounded-2xl hover:scale-105 transition-all group'>
             <div className=''>
                 <div className='relative'>
                     <Image src={"/homepage/missions/1.jpg"} width={395.52} height={341.96} alt='every-girl-in-school' className='rounded-2xl object-cover overflow-clip w-[384px] h-[332px]' />
@@ -18,8 +19,13 @@ const MissionCard = (props: Props) => {
                     <div className='text-[12px] font-semibold px-[12px] py-[4px] absolute top-3 bg-site-bg-tag_tax_benefits_available rounded-r-md text-site-text-tag_tax_benefits_available'>Tax Benefits Available</div>
                 </div>
             </div>
-            <div className='p-4'>
-                <BottomSection/>
+            <div className='h-[77.24px] bg-white  rounded-b-2xl'>
+                <div className='p-4 group-hover:hidden'>
+                    <BottomSection />
+                </div>
+                <div className='hidden group-hover:block p-4'>
+                    <BtnShare red caption='Pledge Monthly'/>
+                </div>
             </div>
         </div>
     )
