@@ -7,7 +7,7 @@ const MostTrustedPlatform = (props: Props) => {
     return (
         <div>
             <div className=''>
-                <SiteLogo size={100}/>
+                <SiteLogo size={60}/>
             </div>
         </div>
     )

@@ -10,7 +10,7 @@ const SiteLogo = (props: Props) => {
         return width * aspectRatio;
     };
 
-    const width = props.width ? props.width : 92.63;
+    const width = props.size ? props.size : 92.63;
     const aspectRatio = 44 / 92.63; // Calculate aspect ratio (height / width)
     const height = calculateHeight(width, aspectRatio);
 
