@@ -2,6 +2,7 @@ import { HomepageCoursel } from "@/components/Site/Carousel/Homepage/HomepageCou
 import HomepageNav from "./components/Header/HomepageNav";
 import GiveMonthly from "./components/Header/GiveMonthly";
 import Missions from "./components/Missions";
+import RecentDonations from "./components/Header/RecentDonations";
 
 export default function Home() {
   return (
@@ -14,10 +15,13 @@ export default function Home() {
       </div>
       <div>
         <div className="phone:mx-0 tablet:mx-10 laptop:mx-40">
-          <GiveMonthly/>
+          <GiveMonthly />
+        </div>
+        <div className="mb-30">
+          <Missions />
         </div>
         <div>
-          <Missions/>
+          <RecentDonations />
         </div>
       </div>
     </div>
