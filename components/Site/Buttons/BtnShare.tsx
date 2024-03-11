@@ -5,6 +5,7 @@ import './button.css'
 type Props = {
     caption?: string
     red?: boolean
+    textSize?: string
 }
 
 const BtnShare = (props: Props) => {
@@ -35,9 +36,11 @@ const BtnShare = (props: Props) => {
 
     }, [])
 
+    const textSize = props.textSize ? props.textSize : "text-sm"
+
     return (
         isMounted && <div ref={buttonRef}>
-            <button id='button' className={`text-sm ${props.red === true ? "text-white bg-site-redHighlight hover:bg-site-redHighlightHover" : "text-site-button-share-text hover:text-site-button-share-text_hover border-site-button-share-border bg-white"}  min-w-[150px] w-full h-[44px]  font-semibold  rounded-md  border  drop-shadow-sm`}>
+            <button id='button' className={`${textSize} ${props.red === true ? "text-white bg-site-redHighlight hover:bg-site-redHighlightHover" : "text-site-button-share-text hover:text-site-button-share-text_hover border-site-button-share-border bg-white"}  min-w-[150px] w-full h-[44px]  font-semibold  rounded-md  border  drop-shadow-sm`}>
                 {props.caption ? props.caption : "Share"}
             </button>
         </div>
