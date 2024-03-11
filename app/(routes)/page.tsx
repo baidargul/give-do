@@ -17,11 +17,14 @@ export default function Home() {
         <div className="phone:mx-0 tablet:mx-10 laptop:mx-40">
           <GiveMonthly />
         </div>
-        <div className="mb-30">
+        <div className="mb-32">
           <Missions />
         </div>
-        <div>
+        <div className="mb-32">
           <RecentDonations />
+        </div>
+        <div className="">
+          
         </div>
       </div>
     </div>
