@@ -6,6 +6,7 @@ import RecentDonations from "./components/RecentDonations";
 import SupportFundraisersSection from "./components/SupportFundraisersSection";
 import TrustedNGOs from "./components/TrustedNGOs";
 import RaiseFundsSection from "./components/RaiseFundsSection";
+import MostTrustedPlatform from "./components/MostTrustedPlatform";
 
 export default function Home() {
   return (
@@ -34,6 +35,9 @@ export default function Home() {
         </div>
         <div className="phone:mx-0 tablet:mx-10 laptop:mx-40 mb-24">
           <RaiseFundsSection />
+        </div>
+        <div>
+          <MostTrustedPlatform />
         </div>
       </div>
     </div>

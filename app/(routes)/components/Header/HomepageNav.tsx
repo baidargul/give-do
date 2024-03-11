@@ -1,3 +1,4 @@
+import SiteLogo from '@/components/Site/Logo/SiteLogo'
 import Image from 'next/image'
 import React from 'react'
 
@@ -6,8 +7,8 @@ type Props = {}
 const HomepageNav = (props: Props) => {
     return (
         <div className='flex justify-between items-center phone:mx-0 tablet:mx-10 laptop:mx-40 mb-2 tablet:mb-5 pt-5 px-4 tablet:px-0'>
-            <div>
-                <Image src={"/logo.png"} width={92.63} height={44} className='w-[92.63px] h-[44px]' alt='site-logo' />
+            <div className='w-[92.63px] h-[44px]'>
+                <SiteLogo />
             </div>
             <div className='flex justify-between gap-4 items-center cursor-pointer'>
                 <div className='flex gap-2 items-center'>
