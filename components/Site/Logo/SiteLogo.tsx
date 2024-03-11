@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 
 type Props = {
-    width?: number;
+    size?: number;
 };
 
 const SiteLogo = (props: Props) => {
