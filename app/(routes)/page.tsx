@@ -40,8 +40,8 @@ export default function Home() {
         <div className="mb-24">
           <MostTrustedPlatform />
         </div>
-        <div className="bg-[#FAF9F9]">
-          <div className="phone:mx-0 tablet:mx-10 laptop:mx-40">
+        <div className="bg-[#FAF9F9] pb-10">
+          <div className="phone:mx-0 tablet:mx-10 laptop:mx-40 mb-24">
             <GiveInTheNewsSection />
           </div>
         </div>

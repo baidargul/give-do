@@ -99,6 +99,7 @@ const GiveInTheNewsSectionCoursel = (props: Props) => {
     }
 
     return (
+        <div className=''>
         <Carousel className="w-full" opts={{ loop: true, align: "start" }} plugins={[Autoplay({ delay: 5000, }),]} setApi={setApi}>
             <CarouselContent>
                 {
@@ -112,6 +113,7 @@ const GiveInTheNewsSectionCoursel = (props: Props) => {
                 }
             </CarouselContent>
         </Carousel>
+        </div>
     )
 }
 

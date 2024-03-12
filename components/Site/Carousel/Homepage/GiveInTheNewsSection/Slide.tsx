@@ -16,7 +16,7 @@ type Props = {
 const Slide = (props: Props) => {
     const { chunk } = props
     return (
-        <div className='w-full flex justify-between gap-4 items-center'>
+        <div className='w-full h-[490px] flex justify-between gap-4 items-center'>
             {chunk.slice(0, 2).map((item, index) => (
                 <MainCard key={index} item={item} />
             ))}
