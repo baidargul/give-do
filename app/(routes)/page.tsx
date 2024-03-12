@@ -7,6 +7,7 @@ import SupportFundraisersSection from "./components/SupportFundraisersSection";
 import TrustedNGOs from "./components/TrustedNGOs";
 import RaiseFundsSection from "./components/RaiseFundsSection";
 import MostTrustedPlatform from "./components/MostTrustedPlatform";
+import GiveInTheNewsSection from "./components/GiveInTheNewsSection";
 
 export default function Home() {
   return (
@@ -38,6 +39,11 @@ export default function Home() {
         </div>
         <div className="mb-24">
           <MostTrustedPlatform />
+        </div>
+        <div className="bg-[#FAF9F9]">
+          <div className="phone:mx-0 tablet:mx-10 laptop:mx-40">
+            <GiveInTheNewsSection />
+          </div>
         </div>
       </div>
     </div>
