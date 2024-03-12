@@ -12,7 +12,7 @@ const CommentsSection = (props: Props) => {
                     <CommentBox />
                 </div>
                 <div className='flex flex-col items-center gap-12 mt-20'>
-                    <div className='text-[40px] w-[80%] text-center font-semibold'>
+                    <div className='text-[2.5rem] w-[80%] text-center font-bold'>
                         Here’s what people say about <span className='text-site-redHighlight font-bold'>give</span>
                     </div>
                     <CommentBox />

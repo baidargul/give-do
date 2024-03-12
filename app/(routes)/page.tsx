@@ -47,7 +47,7 @@ export default function Home() {
           </div>
         </div>
         <div className="phone:mx-0 tablet:mx-10 laptop:mx-40 my-32">
-          <CommentsSection/>
+          <CommentsSection />
         </div>
         <div>
           
