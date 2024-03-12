@@ -8,6 +8,7 @@ import TrustedNGOs from "./components/TrustedNGOs";
 import RaiseFundsSection from "./components/RaiseFundsSection";
 import MostTrustedPlatform from "./components/MostTrustedPlatform";
 import GiveInTheNewsSection from "./components/GiveInTheNewsSection";
+import CommentsSection from "./components/PeopleComments/CommentsSection";
 
 export default function Home() {
   return (
@@ -44,6 +45,9 @@ export default function Home() {
           <div className="phone:mx-0 tablet:mx-10 laptop:mx-40 mb-24">
             <GiveInTheNewsSection />
           </div>
+        </div>
+        <div>
+          <CommentsSection/>
         </div>
       </div>
     </div>
