@@ -46,8 +46,11 @@ export default function Home() {
             <GiveInTheNewsSection />
           </div>
         </div>
-        <div className="phone:mx-0 tablet:mx-10 laptop:mx-40">
+        <div className="phone:mx-0 tablet:mx-10 laptop:mx-40 my-32">
           <CommentsSection/>
+        </div>
+        <div>
+          
         </div>
       </div>
     </div>
