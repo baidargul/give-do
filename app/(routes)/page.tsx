@@ -69,7 +69,7 @@ export default function Home() {
           <SocialChange />
         </div>
         <div className="bg-[#FAF9F9] pt-2 pb-10 mt-28">
-          <div className="mt-20 phone:mx-0 tablet:mx-10 laptop:mx-40 ">
+          <div className="mt-20 phone:mx-0 tablet:mx-10 laptop:mx-40 mb-20">
             <WhatDoesGiveDo />
           </div>
         </div>

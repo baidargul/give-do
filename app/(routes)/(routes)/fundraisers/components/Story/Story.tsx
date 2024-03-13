@@ -1,5 +1,4 @@
 'use client'
-import BtnShare from '@/components/Site/Buttons/BtnShare'
 import React, { useEffect } from 'react'
 
 type Props = {}

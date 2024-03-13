@@ -98,7 +98,7 @@ const CorporatePartners = (props: Props) => {
             </div>
             <div className={`flex gap-10 items-center transition-opacity duration-500 ${shouldFadeOut ? 'opacity-0' : 'opacity-100'}`}>
                 {visibleItems.map((company: any, index: number) => (
-                    <div key={company.name} className='drop-shadow-sm cursor-pointer'>
+                    <div key={index} className='drop-shadow-sm cursor-pointer'>
                         <Image src={company.image} width={130} height={130} alt='corporate' className='' />
                     </div>
                 ))}
