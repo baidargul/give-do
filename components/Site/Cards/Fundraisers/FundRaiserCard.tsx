@@ -12,7 +12,7 @@ const FundRaiserCard = (props: Props) => {
 
 
     return (
-        <Link href={"/fundraisers/"} className='rounded-2xl relative w-auto h-[559.6px] group cursor-pointer hover:scale-105 transition-all drop-shadow-md bg-white'>
+        <Link href={"/fundraisers/template-page/"} className='rounded-2xl relative w-auto h-[559.6px] group cursor-pointer hover:scale-105 transition-all drop-shadow-md bg-white'>
             <div className='w-full'>
                 <Image src={"/homepage/missions/1.jpg"} width={384} height={300} alt={"fundraiser"} className='rounded-t-2xl h-[300px] w-full object-cover' />
             </div>
