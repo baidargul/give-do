@@ -14,7 +14,7 @@ const SupportFundraisersSection = (props: Props) => {
             </div>
             <div className='grid grid-cols-3 my-8 gap-10 w-full'>
                 <FundRaiserCard />
-                <FundRaiserCard />
+                <FundRaiserCard urgent />
                 <FundRaiserCard />
                 <FundRaiserCard />
                 <FundRaiserCard />
