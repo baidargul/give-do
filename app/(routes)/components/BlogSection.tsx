@@ -35,7 +35,7 @@ const data: Blog[] = [
 
 const BlogSection = (props: Props) => {
     return (
-        <div className='flex gap-4 justify-between'>
+        <div className='flex gap-4 justify-between items-center'>
             <div className='flex flex-col gap-4 w-[35%]'>
                 <div className='text-[40px] font-semibold text-site-text-tag_top_donor'>
                     Blog
