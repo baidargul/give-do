@@ -12,6 +12,7 @@ import CommentsSection from "./components/PeopleComments/CommentsSection";
 import BlogSection from "./components/BlogSection";
 import SignupAndStayInformed from "./components/SignupAndStayInformed";
 import CorporatePartners from "./components/CorporatePartners/CorporatePartners";
+import { SocialChange } from "./components/SocialChange";
 
 export default function Home() {
   return (
@@ -62,6 +63,9 @@ export default function Home() {
         </div>
         <div className="mt-48 phone:mx-0 tablet:mx-10 laptop:mx-40">
           <CorporatePartners />
+        </div>
+        <div className="mt-48 phone:mx-0 tablet:mx-10 laptop:mx-40">
+          <SocialChange />
         </div>
       </div>
     </div>
