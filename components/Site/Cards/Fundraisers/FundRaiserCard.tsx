@@ -38,7 +38,7 @@ const FundRaiserCard = (props: Props) => {
                     </div>
                 </div>
                 <div className='hidden group-hover:block'>
-                    <BtnShare red />
+                    <BtnShare red caption='Donate Now' />
                 </div>
             </div>
         </div>
