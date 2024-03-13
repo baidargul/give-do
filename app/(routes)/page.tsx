@@ -13,6 +13,7 @@ import BlogSection from "./components/BlogSection";
 import SignupAndStayInformed from "./components/SignupAndStayInformed";
 import CorporatePartners from "./components/CorporatePartners/CorporatePartners";
 import { SocialChange } from "./components/SocialChange";
+import WhatDoesGiveDo from "./components/WhatDoesGiveDo";
 
 export default function Home() {
   return (
@@ -66,6 +67,11 @@ export default function Home() {
         </div>
         <div className="mt-48 phone:mx-0 tablet:mx-10 laptop:mx-40">
           <SocialChange />
+        </div>
+        <div className="bg-[#FAF9F9] pt-2 pb-10 mt-28">
+          <div className="mt-20 phone:mx-0 tablet:mx-10 laptop:mx-40 ">
+            <WhatDoesGiveDo />
+          </div>
         </div>
       </div>
     </div>
