@@ -10,6 +10,7 @@ import MostTrustedPlatform from "./components/MostTrustedPlatform";
 import GiveInTheNewsSection from "./components/GiveInTheNewsSection";
 import CommentsSection from "./components/PeopleComments/CommentsSection";
 import BlogSection from "./components/BlogSection";
+import SignupAndStayInformed from "./components/SignupAndStayInformed";
 
 export default function Home() {
   return (
@@ -50,11 +51,15 @@ export default function Home() {
         <div className="phone:mx-0 tablet:mx-10 laptop:mx-40 my-32">
           <CommentsSection />
         </div>
-        <div className="bg-[#FAF9F9] pt-20">
-          <div className="phone:mx-0 tablet:mx-10 laptop:mx-40 mb-24 pb-20">
-            <BlogSection/>
+        <div className="bg-[#FAF9F9] pt-20 relative">
+          <div className="phone:mx-0 tablet:mx-10 laptop:mx-40 mb-24 pb-32">
+            <BlogSection />
           </div>
         </div>
+        <div className="phone:mx-0 tablet:mx-10 laptop:mx-40 mb-24 -mt-40">
+          <SignupAndStayInformed/>
+        </div>
+
       </div>
     </div>
   );
