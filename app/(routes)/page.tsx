@@ -11,6 +11,7 @@ import GiveInTheNewsSection from "./components/GiveInTheNewsSection";
 import CommentsSection from "./components/PeopleComments/CommentsSection";
 import BlogSection from "./components/BlogSection";
 import SignupAndStayInformed from "./components/SignupAndStayInformed";
+import CorporatePartners from "./components/CorporatePartners/CorporatePartners";
 
 export default function Home() {
   return (
@@ -57,9 +58,11 @@ export default function Home() {
           </div>
         </div>
         <div className="phone:mx-0 tablet:mx-10 laptop:mx-40 mb-24 -mt-40">
-          <SignupAndStayInformed/>
+          <SignupAndStayInformed />
         </div>
-
+        <div className="mt-48 phone:mx-0 tablet:mx-10 laptop:mx-40">
+          <CorporatePartners />
+        </div>
       </div>
     </div>
   );
