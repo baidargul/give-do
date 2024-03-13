@@ -13,7 +13,7 @@ const SignupAndStayInformed = (props: Props) => {
             </div>
             <div className='flex gap-4 p-4 justify-end items-center'>
                 <div className='w-full'>
-                    <Input placeholder='this' />
+                    <Input placeholder='Enter you Email ID' />
                 </div>
                 <div>
                     <BtnShare red caption='Subscribe' textSize='text-lg' />
