@@ -66,14 +66,14 @@ const data = [
         name: "Adobe",
         image: "/homepage/corporatepartners/2.png",
     },
-   
+
 ]
 
 const CorporatePartners = (props: Props) => {
     const [visibleItems, setVisibleItems] = useState(data.slice(0, 8));
     const [shouldFadeOut, setShouldFadeOut] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
-    
+
     useEffect(() => {
         const interval = setInterval(() => {
             setShouldFadeOut(true);
@@ -98,7 +98,7 @@ const CorporatePartners = (props: Props) => {
             </div>
             <div className={`flex gap-10 items-center transition-opacity duration-500 ${shouldFadeOut ? 'opacity-0' : 'opacity-100'}`}>
                 {visibleItems.map((company: any, index: number) => (
-                    <div key={company.name}>
+                    <div key={company.name} className='drop-shadow-sm cursor-pointer'>
                         <Image src={company.image} width={130} height={130} alt='corporate' className='' />
                     </div>
                 ))}
