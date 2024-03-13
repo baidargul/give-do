@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import React, { useEffect } from 'react'
 
 type Props = {}
@@ -24,7 +25,7 @@ const WhatDoesGiveDo = (props: Props) => {
 
             <div className='relative'>
                 <div className={`${showMore === false && "line-clamp-[3]"} transition-all duration-500 overflow-hidden`}>
-                    <div className={`flex flex-col gap-4 text-[16px] text-site-text-fundraiser_support_description tracking-wide leading-snug ${ showMore === false && "h-20"}`}>
+                    <div className={`flex flex-col gap-4 text-[16px] text-site-text-fundraiser_support_description tracking-wide leading-snug ${showMore === false && "h-20"}`}>
                         <div>
                             Give’s mission is to make giving bigger and better. We are the most trusted giving platform in India. Through our technology solutions and services, we enable individuals and organizations to raise funds for, and donate to any cause they care about, with trust and convenience. Our community of 2.7M+ individual donors and 300+ organizations supports 3,000+ verified nonprofits, serving 15M+ people across the country. Give exists to alleviate poverty by enabling the world to give. Established in 2000, Give, together with its partners, is the largest and most trusted giving platform in India.
                         </div>
@@ -35,7 +36,14 @@ const WhatDoesGiveDo = (props: Props) => {
                             Through its seamless donation experience on the platform, give.do fosters a culture of giving that is both simple and has a massive impact. Indian donors qualify for a tax deduction under section <span className='text-site-redHighlight'>80G of the Income Tax Act of India</span>.
                         </div>
                     </div>
-                    <button onClick={handleReadMore} className={`text-site-bg-redHighlight -bottom-5 absolute font-medium ${showMore && "-bottom-6"}`}>{showMore ? "Show Less" : "Read More"}</button>
+                    <button onClick={handleReadMore} className={`text-site-bg-redHighlight -bottom-5 absolute font-medium flex gap-1 items-center ${showMore && "-bottom-6"}`}>
+                        <div>
+                            Learn More
+                        </div>
+                        <div>
+                            <Image src={"/other/icon-down.png"} width={20} height={20} alt="down" />
+                        </div>
+                    </button>
                     <div className={`h-28 w-full bg-gradient-to-t from-[#FAF9F9] to-transparent absolute bottom-0 ${showMore && "hidden"}`}></div>
                 </div>
             </div>
