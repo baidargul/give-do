@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
 
@@ -5,7 +6,7 @@ type Props = {}
 
 const BlogCard = (props: Props) => {
     return (
-        <div className='rounded-2xl bg-white w-[384px] h-[372.4px]'>
+        <div className='rounded-2xl bg-white w-[384px] h-[372.4px] drop-shadow-md'>
             <div className='w-fit'>
                 <Image src={"/homepage/blog/1.jpg"} width={384} height={216} className='w-[384px] h-[216px] object-cover rounded-t-2xl' alt='' />
             </div>
