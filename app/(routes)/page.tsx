@@ -14,6 +14,8 @@ import SignupAndStayInformed from "./components/SignupAndStayInformed";
 import CorporatePartners from "./components/CorporatePartners/CorporatePartners";
 import { SocialChange } from "./components/SocialChange";
 import WhatDoesGiveDo from "./components/WhatDoesGiveDo";
+import SearchFundraiserByCause from "./components/SearchFundraiserByCause";
+import Footer from "./(routes)/components/Footer";
 
 export default function Home() {
   return (
@@ -72,6 +74,12 @@ export default function Home() {
           <div className="mt-20 phone:mx-0 tablet:mx-10 laptop:mx-40 mb-20">
             <WhatDoesGiveDo />
           </div>
+          <div className="phone:mx-0 tablet:mx-10 laptop:mx-40">
+            <SearchFundraiserByCause />
+          </div>
+        </div>
+        <div className="-mt-16">
+          <Footer />
         </div>
       </div>
     </div>
