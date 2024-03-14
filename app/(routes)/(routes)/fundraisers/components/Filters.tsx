@@ -1,10 +1,17 @@
+'use client'
 import BtnShare from '@/components/Site/Buttons/BtnShare'
 import { Input } from '@/components/ui/input'
 import Image from 'next/image'
 import React from 'react'
 import CausesSection from './Causes/CausesSection'
+import FundRaiserCard from '@/components/Site/Cards/Fundraisers/FundRaiserCard'
 
 type Props = {}
+
+const cards = [
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21
+]
+
 
 const Filters = (props: Props) => {
     return (
@@ -24,6 +31,16 @@ const Filters = (props: Props) => {
             <div className='phone:mx-0 tablet:mx-10 laptop:mx-40 mt-10'>
                 <CausesSection />
             </div>
+            <div className='phone:mx-0 tablet:mx-10 laptop:mx-40 mt-10'>
+                <div className='grid grid-cols-3 w-full gap-10 justify-items-center'>
+                    {
+                        cards.map((card, index) => {
+                            return <FundRaiserCard key={index} />
+                        })
+                    }
+                </div>
+            </div>
+            
         </div>
     )
 }

@@ -1,7 +1,5 @@
 'use client'
 import React from 'react'
-import MainCard from './MainCard'
-import SubCard from './SubCard'
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel'
 import Autoplay from "embla-carousel-autoplay"
 import Slide from './Slide'
