@@ -54,7 +54,7 @@ const BlogsSectionCoursel = (props: Props) => {
     }
 
     return (
-        <div>
+       isMounted && <div>
             <Carousel className="w-full" opts={{ loop: true, align: "start" }} plugins={[Autoplay({ delay: 5000, }),]} setApi={setApi}>
                 <CarouselContent>
                     {/* Map over chunks and create a CarouselItem for each chunk */}
