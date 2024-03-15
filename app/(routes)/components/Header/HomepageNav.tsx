@@ -80,7 +80,7 @@ const HomepageNav = (props: Props) => {
                     </div>
                 </div>
             </div>
-            <div className='flex tablet:hidden justify-between items-center p-4'>
+            <div className='flex tablet:hidden justify-between items-center p-4 fixed z-[1] bg-white w-full'>
                 <SiteLogo size={70} />
                 <div>
                     <SheetProvider content={mobileMenu()}>
