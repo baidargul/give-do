@@ -56,7 +56,7 @@ export default function Home() {
         <div className="phone:mx-0 tablet:mx-10 laptop:mx-40 tablet:my-32 px-4 tablet:px-0">
           <CommentsSection />
         </div>
-        <div className="bg-[#FAF9F9] pt-20 relative">
+        <div className="bg-[#FAF9F9] pt-24 tablet:pt-20 relative px-4 tablet:px-0">
           <div className="phone:mx-0 tablet:mx-10 laptop:mx-40 mb-24 pb-32">
             <BlogSection />
           </div>

@@ -1,17 +1,22 @@
 'use client'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import CommentBox from './CommentBox'
 import { isMobile } from 'react-device-detect'
 
 type Props = {}
 
 const CommentsSection = (props: Props) => {
+    const [isMounted, setIsMounted] = useState(false)
+
+    useEffect(() => {
+        setIsMounted(true)
+    }, [])
 
 
     if (isMobile) {
         return (
-            <div>
-                <div className='text-[1.5rem] w-[80%] text-center font-bold'>
+            isMounted &&  <div>
+                <div className='text-[1.5rem] tablet:w-[80%] tablet:text-center font-bold'>
                     Here’s what people say about <span className='text-site-redHighlight font-bold'>give</span>
                 </div>
                 <div className='flex flex-col gap-6'>
@@ -24,7 +29,7 @@ const CommentsSection = (props: Props) => {
         )
     } else {
         return (
-            <div className='-mt-10 tablet:mt-0'>
+            isMounted && <div className='-mt-10 tablet:mt-0'>
                 <div className='text-[1.5rem] tablet:hidden w-[80%] tablet:text-center font-bold'>
                     Here’s what people say about <span className='text-site-redHighlight font-bold'>give</span>
                 </div>
