@@ -6,13 +6,13 @@ type Props = {}
 const SupportFundraisersSection = (props: Props) => {
     return (
         <div>
-            <div className='text-[40px] font-semibold text-site-text-tag_top_donor'>
+            <div className='text-[1.5rem] tablet:text-[40px] font-semibold text-site-text-tag_top_donor'>
                 Support a fundraiser
             </div>
-            <div className='text-[20px] text-site-text-fundraiser_support_description'>
+            <div className='text-[.9rem] mt-2 tablet:mt-0 tablet:text-[20px] text-site-text-fundraiser_support_description'>
                 Pick a cause close to your heart and donate now
             </div>
-            <div className='grid grid-cols-3 my-8 gap-10 w-full'>
+            <div className='flex flex-col gap-10 tablet:{grid grid-cols-3 my-8 gap-10} w-full'>
                 <FundRaiserCard />
                 <FundRaiserCard urgent />
                 <FundRaiserCard />
