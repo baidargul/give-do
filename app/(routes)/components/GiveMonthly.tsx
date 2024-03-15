@@ -73,8 +73,8 @@ const GiveMonthly = (props: Props) => {
                     </div>
                 </div>
             </div>
-            <div className='block tablet:hidden border-y'>
-                <FadeInOutProvider content={final} itemsToShow={1} fadeOutDuration={1000} />
+            <div className='block tablet:hidden border-y p-1 pb-0 pt-2 -mt-5 mb-5'>
+                <FadeInOutProvider content={final} itemsToShow={1} delay={2000} />
             </div>
         </div>
     )
