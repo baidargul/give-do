@@ -64,7 +64,7 @@ export default function Home() {
         <div className="phone:mx-0 tablet:mx-10 laptop:mx-40 mb-24 -mt-40 px-4 tablet:px-0">
           <SignupAndStayInformed />
         </div>
-        <div className="mt-48 phone:mx-0 tablet:mx-10 laptop:mx-40">
+        <div className="mt-48 phone:mx-0 tablet:mx-10 laptop:mx-40 px-4 tablet:px-0">
           <CorporatePartners />
         </div>
         <div className="mt-48 phone:mx-0 tablet:mx-10 laptop:mx-40">
