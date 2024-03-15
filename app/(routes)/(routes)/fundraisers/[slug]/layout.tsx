@@ -9,9 +9,6 @@ export default function Layout(props: Props) {
   return (
     <div>
       <div className="">
-        <Header />
-      </div>
-      <div className="">
         {props.children}
       </div>
       <div>
