@@ -15,32 +15,32 @@ const images = [
   {
     url: "",
     alt: "Image 1",
-    image: "/homepage/coursel/1.jpg",
+    image: "/homepage/coursel/1",
   },
   {
     url: "",
     alt: "Image 2",
-    image: "/homepage/coursel/2.jpg",
+    image: "/homepage/coursel/2",
   },
   {
     url: "",
     alt: "Image 3",
-    image: "/homepage/coursel/3.jpg",
+    image: "/homepage/coursel/3",
   },
   {
     url: "",
     alt: "Image 4",
-    image: "/homepage/coursel/4.jpg",
+    image: "/homepage/coursel/4",
   },
   {
     url: "",
     alt: "Image 5",
-    image: "/homepage/coursel/5.jpg",
+    image: "/homepage/coursel/5",
   },
   {
     url: "",
     alt: "Image 6",
-    image: "/homepage/coursel/6.jpg",
+    image: "/homepage/coursel/6",
   },
 ]
 
@@ -73,37 +73,68 @@ export function HomepageCoursel() {
   }, [current])
 
   return (
-    <div className="relative">
-      <Carousel className="w-full" opts={{ loop: true, align: "start" }} plugins={[Autoplay({ delay: 5000, }),]} setApi={setApi}>
-        <CarouselContent>
-          {images.map((image, index) => (
-            <CarouselItem key={index}>
-              <div className="w-full cursor-pointer select-none" onClick={() => { }}>
-                <Image src={image.image} alt={image.alt} width={1466} height={490} className="w-full select-none pointer-events-none" />
+    <div>
+      <div className="hidden tablet:block relative">
+        <Carousel className="w-full" opts={{ loop: true, align: "start" }} plugins={[Autoplay({ delay: 5000, }),]} setApi={setApi}>
+          <CarouselContent>
+            {images.map((image, index) => (
+              <CarouselItem key={index}>
+                <div className="w-full cursor-pointer select-none" onClick={() => { }}>
+                  <Image src={`${image.image}.jpg`} alt={image.alt} width={1466} height={490} className="w-full select-none pointer-events-none" />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+
+
+          <div className="absolute bottom-3 w-full">
+            <div className="flex justify-center items-center">
+
+              <div className={`grid grid-cols-6 w-fit gap-4  justify-center items-center justify-items-center `}>
+                {
+                  images.map((_, index) => {
+                    const thisSlide = index + 1;
+                    return (
+                      <div className={`${current.toString() === thisSlide.toString() && "bg-red-500"} bg-site-text-fundraiser_support_description w-[32px] h-[7px] cursor-pointer hover:bg-site-redHighlight/90`} key={index} onClick={() => { handleClick(index) }} >
+                      </div>
+                    )
+                  })
+                }
               </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-
-
-        <div className="absolute bottom-3 w-full">
-          <div className="flex justify-center items-center">
-
-            <div className={`grid grid-cols-6 w-fit gap-4  justify-center items-center justify-items-center `}>
-              {
-                images.map((_, index) => {
-                  const thisSlide = index + 1;
-                  return (
-                    <div className={`${current.toString()===thisSlide.toString() && "bg-red-500"} bg-site-text-fundraiser_support_description w-[32px] h-[7px] cursor-pointer hover:bg-site-redHighlight/90`} key={index} onClick={() => { handleClick(index) }} >
-                    </div>
-                  )
-                })
-              }
             </div>
           </div>
-        </div>
 
-      </Carousel>
+        </Carousel>
+      </div>
+      <div className="block relative tablet:hidden">
+        <Carousel className="w-full" opts={{ loop: true, align: "start" }} plugins={[Autoplay({ delay: 5000, }),]} setApi={setApi}>
+          <CarouselContent>
+            {images.map((image, index) => (
+              <CarouselItem key={index}>
+                <div className="w-full cursor-pointer select-none" onClick={() => { }}>
+                  <Image src={`${image.image}m.jpg`} alt={image.alt} width={1466} height={490} className="w-full select-none pointer-events-none" />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <div className="absolute bottom-3 w-full">
+            <div className="flex justify-center items-center">
+
+              <div className={`grid grid-cols-6 w-fit gap-4  justify-center items-center justify-items-center `}>
+                {
+                  images.map((_, index) => {
+                    const thisSlide = index + 1;
+                    return (
+                      <div className={`${current.toString() === thisSlide.toString() && "bg-red-500"} bg-site-text-fundraiser_support_description w-[32px] h-[7px] cursor-pointer hover:bg-site-redHighlight/90`} key={index} onClick={() => { handleClick(index) }} >
+                      </div>
+                    )
+                  })
+                }
+              </div>
+            </div>
+          </div>
+        </Carousel>
+      </div>
     </div>
   )
 }
