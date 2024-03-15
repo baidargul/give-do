@@ -1,4 +1,5 @@
 'use client'
+import FadeInOutProvider from '@/components/FadeInOut/FadeInOutProvider'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 
@@ -88,15 +89,37 @@ const TrustedNGOs = (props: Props) => {
     }, [currentIndex]); // Trigger effect whenever currentIndex changes
 
 
+    const chunkSize = 6;
+    const slides: any = []
+    let chunk: any = []
+    data.map((inner, index) => {
+        if (index % chunkSize === 0) {
+            slides.push(
+                <div className='grid grid-cols-2 gap-2'>
+                    {chunk}
+                </div>
+            )
+            chunk = []
+        }
+        chunk.push(
+            <div key={index} className='drop-shadow-sm cursor-pointer'>
+                <Image src={inner.image} width={130} height={130} alt='corporate' className='' />
+            </div>
+        )
+    })
+
     return (
-        <div>
-            <div className='text-[40px] font-semibold text-site-text-tag_top_donor'>
+        <div className=''>
+            <div className='text-[1.5rem] tablet:text-[40px] font-semibold text-site-text-tag_top_donor'>
                 Our trusted NGO partners
             </div>
-            <div className='text-[20px] text-site-text-fundraiser_support_description mb-5'>
+            <div className='text-[1rem] tablet:text-[20px] text-site-text-fundraiser_support_description mb-5'>
                 We have been raising funds for credible nonprofits for 20+ years
             </div>
-            <div className={`flex gap-10 justify-between items-center transition-opacity duration-500 ${shouldFadeOut ? 'opacity-0' : 'opacity-100'}`}>
+            <div className='tablet:hidden flex justify-center'>
+                <FadeInOutProvider content={slides} itemsToShow={1} />
+            </div>
+            <div className={`hidden tablet:flex gap-10 justify-between items-center transition-opacity duration-500 ${shouldFadeOut ? 'opacity-0' : 'opacity-100'}`}>
                 {visibleItems.map((company: any, index: number) => (
                     <div key={index} className='drop-shadow-sm cursor-pointer'>
                         <Image src={company.image} width={130} height={130} alt='corporate' className='' />

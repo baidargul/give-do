@@ -39,7 +39,7 @@ export default function Home() {
         <div className="phone:mx-0 tablet:mx-10 laptop:mx-40  px-4 tablet:px-0">
           <SupportFundraisersSection />
         </div>
-        <div className="phone:mx-0 tablet:mx-10 laptop:mx-40 mb-24">
+        <div className="phone:mx-0 tablet:mx-10 laptop:mx-40 mb-24 px-4 tablet:px-0">
           <TrustedNGOs />
         </div>
         <div className="phone:mx-0 tablet:mx-10 laptop:mx-40 mb-24">
