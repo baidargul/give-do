@@ -19,7 +19,7 @@ const CommentsSection = (props: Props) => {
                 <div className='text-[1.5rem] tablet:w-[80%] tablet:text-center font-bold'>
                     Here’s what people say about <span className='text-site-redHighlight font-bold'>give</span>
                 </div>
-                <div className='flex flex-col gap-6'>
+                <div className='flex flex-col gap-6 mt-4 tablet:mt-0'>
                     <CommentBox />
                     <CommentBox />
                     <CommentBox />
