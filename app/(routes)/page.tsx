@@ -30,10 +30,10 @@ export default function Home() {
         <div className="phone:mx-0 tablet:mx-10 laptop:mx-40 px-4 tablet:px-0">
           <GiveMonthly />
         </div>
-        <div className="phone:mx-0 tablet:mx-10 laptop:mx-40 mb-32 px-4 tablet:px-0">
+        <div className="phone:mx-0 tablet:mx-10 laptop:mx-40 tablet:mb-32 px-4 tablet:px-0">
           <Missions />
         </div>
-        <div className="mb-32">
+        <div className="tablet:mb-32 my-10">
           <RecentDonations />
         </div>
         <div className="phone:mx-0 tablet:mx-10 laptop:mx-40">

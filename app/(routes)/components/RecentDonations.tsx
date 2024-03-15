@@ -19,7 +19,7 @@ const RecentDonations = (props: Props) => {
                     {
                         donations.map((donation, index) => (
                             <div key={index} className='flex gap-1 items-center'>
-                                <div className='flex gap-1 text-[24px]'>
+                                <div className='flex gap-1 text-[1rem] tablet:text-[24px]'>
                                     <div>
                                         {donation.name} donated
                                     </div>
