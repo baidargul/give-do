@@ -1,22 +1,78 @@
+import BtnShare from '@/components/Site/Buttons/BtnShare'
 import SiteLogo from '@/components/Site/Logo/SiteLogo'
+import HomePageNavItem from '@/components/Site/Menu/HomePageNavItem'
 import Image from 'next/image'
 import React from 'react'
 
 type Props = {}
 
+const forAboutMenu = [
+    {
+        title: "Our Story",
+        link: "#"
+    },
+    {
+        title: "Join Us",
+        link: "#",
+    },
+    {
+        title: "Blog",
+        link: "#",
+    },
+    {
+        title: "Contact Us",
+        link: "#",
+    },
+]
+const forDonorsMenu = [
+    {
+        title: "Discover fundraisers",
+        link: "/fundraisers/"
+    },
+    {
+        title: "Donate to NGOs",
+        link: "#",
+    },
+    {
+        title: "Monthly Missions",
+        link: "#",
+    },
+    {
+        title: "Raise funds for your special day",
+        link: "#",
+    },
+]
+
 const HomepageNav = (props: Props) => {
     return (
         <div className='flex justify-between items-center phone:mx-0 tablet:mx-10 laptop:mx-40 mb-2 tablet:mb-5 pt-5 px-4 tablet:px-0'>
-            <div className='w-[92.63px] h-[44px]'>
-                <SiteLogo />
+            <div className='w-[98.94px] h-[47px]'>
+                <SiteLogo size={100} />
             </div>
-            <div className='flex justify-between gap-4 items-center cursor-pointer'>
-                <div className='flex gap-2 items-center'>
-                    <div className='pointer-events-none fill-site-redHighlight'><Image src={"/other/searchRed.png"} width={18} height={18} alt='find fundraisers' /></div>
-                    <div className='hidden tablet:block text-[16px] text-site-text-fundraiser_support_description'>Find Fundraisers</div>
-                </div>
+            <div className='flex justify-between gap-10 items-center cursor-pointer'>
                 <div>
-                    <Image src={"/profiles/default.jpg"} width={40} height={40} className='w-[40px] h-[40px] rounded-full' alt='user' />
+                    <HomePageNavItem links={forDonorsMenu}>
+                        For Donors
+                    </HomePageNavItem>
+                </div>
+                <div className='text-[18px] font-semibold text-site-text-tag_first_donor'>
+                    CSR
+                </div>
+                <div className='text-[18px] font-semibold text-site-text-tag_first_donor'>
+                    DIscover NGOs
+                </div>
+                <div className='text-[18px] font-semibold text-site-text-tag_first_donor'>
+                    <HomePageNavItem links={forAboutMenu}>
+                        About
+                    </HomePageNavItem>
+                </div>
+                <div className='flex gap-2 '>
+                    <div className='w-[60%]'>
+                        <BtnShare caption='Start a fundraiser' textSize='text-lg' />
+                    </div>
+                    <div className='w-[20%]'>
+                        <BtnShare caption='Login' red textSize='text-lg' />
+                    </div>
                 </div>
             </div>
         </div>
