@@ -116,7 +116,7 @@ const CorporatePartners = (props: Props) => {
     })
 
     return (
-        isMounted && <div className='flex flex-col justify-center items-center'>
+        isMounted && <div className='flex flex-col justify-center items-center -mt-16 tablet:mt-0'>
             <div className="text-[1.2rem] tablet:text-[48px] font-semibold text-site-text-tag_first_donor">
                 Our Corporate Partners
             </div>
