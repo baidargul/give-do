@@ -45,11 +45,11 @@ export default function Home() {
         <div className="phone:mx-0 tablet:mx-10 laptop:mx-40 mb-24  px-4 tablet:px-0">
           <RaiseFundsSection />
         </div>
-        <div className="mb-24 px-4 tablet:px-0">
+        <div className="mb-14 tablet:mb-24 px-4 tablet:px-0">
           <MostTrustedPlatform />
         </div>
-        <div className="bg-[#FAF9F9] pb-10">
-          <div className="phone:mx-0 tablet:mx-10 laptop:mx-40 mb-24">
+        <div className="bg-[#FAF9F9] tablet:pb-10 px-4 tablet:px-0">
+          <div className="phone:mx-0 tablet:mx-10 laptop:mx-40 mb-24 ">
             <GiveInTheNewsSection />
           </div>
         </div>
