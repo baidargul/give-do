@@ -30,10 +30,10 @@ const MissionCard = (props: Props) => {
                 </div>
             </div>
             <div className='tablet:h-[77.24px] bg-white  rounded-b-2xl'>
-                <div className='p-4 tablet:{group-hover:hidden}'>
+                <div className='p-4 tablet:group-hover:hidden'>
                     <BottomSection mission={props.mission} />
                 </div>
-                <div className='-mt-4 tablet{hidden group-hover:block mt-0} p-4'>
+                <div className='-mt-4 tablet:hidden tablet:group-hover:block tablet:mt-0 p-4'>
                     <BtnShare red caption='Pledge Monthly' />
                 </div>
             </div>
