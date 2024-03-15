@@ -12,7 +12,7 @@ const SupportFundraisersSection = (props: Props) => {
             <div className='text-[.9rem] mt-2 tablet:mt-0 tablet:text-[20px] text-site-text-fundraiser_support_description'>
                 Pick a cause close to your heart and donate now
             </div>
-            <div className='flex flex-col gap-10 tablet:{grid grid-cols-3 my-8 gap-10} w-full'>
+            <div className='flex flex-col gap-10 mt-10 tablet:mt-8 tablet:grid tablet:grid-cols-3 tablet:my-8 tablet:gap-10 w-full'>
                 <FundRaiserCard />
                 <FundRaiserCard urgent />
                 <FundRaiserCard />
