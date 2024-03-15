@@ -33,7 +33,7 @@ const missions = [
 
 const Missions = (props: Props) => {
     return (
-        <div className='flex justify-center items-center gap-8'>
+        <div className='flex flex-col tablet:flex-row justify-center items-center gap-8'>
             {
                 missions.map((mission, index) => (
                     <MissionCard key={index} mission={mission} />
