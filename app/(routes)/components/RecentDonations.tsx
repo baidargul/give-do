@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-
+import Marquee from 'react-fast-marquee'
 type Props = {}
 
 const donations = [
@@ -14,7 +14,7 @@ const donations = [
 const RecentDonations = (props: Props) => {
     return (
         <div className='bg-site-redHighlight/5 py-[20px] flex justify-center items-center'>
-            <marquee>
+            <Marquee>
                 <div className='flex gap-1'>
                     {
                         donations.map((donation, index) => (
@@ -34,7 +34,7 @@ const RecentDonations = (props: Props) => {
                         ))
                     }
                 </div>
-            </marquee>
+            </Marquee>
         </div>
     )
 }
