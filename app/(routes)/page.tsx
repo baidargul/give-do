@@ -67,7 +67,7 @@ export default function Home() {
         <div className="mt-48 phone:mx-0 tablet:mx-10 laptop:mx-40 px-4 tablet:px-0">
           <CorporatePartners />
         </div>
-        <div className="mt-48 phone:mx-0 tablet:mx-10 laptop:mx-40">
+        <div className="mt-48 phone:mx-0 tablet:mx-10 laptop:mx-40 px-4 tablet:px-0">
           <SocialChange />
         </div>
         <div className="bg-[#FAF9F9] pt-2 pb-10 mt-28">
