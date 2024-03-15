@@ -47,7 +47,7 @@ const BlogSection = (props: Props) => {
                     <BtnShare caption='Learn More' />
                 </div>
             </div>
-            <div className='w-[72%]'>
+            <div className='w-full tablet:w-[72%] mt-4 tablet:mt-0'>
                 <BlogsHolder />
             </div>
         </div>

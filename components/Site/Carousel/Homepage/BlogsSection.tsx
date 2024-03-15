@@ -1,9 +1,10 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel'
 import Autoplay from "embla-carousel-autoplay"
 import { type CarouselApi } from "@/components/ui/carousel"
 import BlogCard from '../../Cards/BlogCard/BlogCard'
+import { isMobile } from 'react-device-detect'
 
 type Props = {}
 
@@ -40,8 +41,13 @@ const BlogsSectionCoursel = (props: Props) => {
     const [api, setApi] = useState<CarouselApi>()
     const [current, setCurrent] = React.useState(0)
     const [count, setCount] = React.useState(0)
+    const [isMounted, setIsMounted] = React.useState(false)
 
-    const chunkSize = 2
+    useEffect(() => {
+        setIsMounted(true)
+    }, [])
+
+    const chunkSize = isMobile ? 1 : 2
     const chunks = []
     for (let i = 0; i < data.length; i += chunkSize) {
         chunks.push(data.slice(i, i + chunkSize));
