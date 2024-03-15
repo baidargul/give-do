@@ -79,7 +79,7 @@ const TrustedNGOs = (props: Props) => {
             setTimeout(() => {
                 setShouldFadeOut(false);
                 const nextIndex = (currentIndex + 6) % data.length;
-                setVisibleItems(data.slice(nextIndex, nextIndex + 6)); // Show next 8 items
+                setVisibleItems(data.slice(nextIndex, nextIndex + 6)); // Show next <number> items
                 setCurrentIndex(nextIndex);
             }, 500); // Delay fade in by 500 milliseconds
         }, 2000); // Wait for 2 seconds before fading out
