@@ -19,12 +19,12 @@ const WhatDoesGiveDo = (props: Props) => {
 
     return (
         isMounted && <div>
-            <div className='text-[24px] font-semibold mb-2'>
+            <div className='text-[1.5rem] tablet:text-[24px] font-semibold mb-2'>
                 What does <span className='text-site-redHighlight'>give</span> do?
             </div>
 
             <div className='relative'>
-                <div className={`${showMore === false && "line-clamp-[3]"} transition-all duration-500 overflow-hidden`}>
+                <div className={`${showMore === false && "line-clamp-[9] tablet:line-clamp-[3]"} transition-all duration-500 overflow-hidden`}>
                     <div className={`flex flex-col gap-4 text-[16px] text-site-text-fundraiser_support_description tracking-wide leading-snug ${showMore === false && "h-20"}`}>
                         <div>
                             Give’s mission is to make giving bigger and better. We are the most trusted giving platform in India. Through our technology solutions and services, we enable individuals and organizations to raise funds for, and donate to any cause they care about, with trust and convenience. Our community of 2.7M+ individual donors and 300+ organizations supports 3,000+ verified nonprofits, serving 15M+ people across the country. Give exists to alleviate poverty by enabling the world to give. Established in 2000, Give, together with its partners, is the largest and most trusted giving platform in India.

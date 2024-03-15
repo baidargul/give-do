@@ -49,10 +49,10 @@ const data = [
 const SearchFundraiserByCause = (props: Props) => {
     return (
         <div>
-            <div className='text-[24px] font-semibold mb-2'>
+            <div className='text-[1.5rem] tablet:text-[24px] font-semibold mb-2'>
                 Search fundraisers by cause
             </div>
-            <div className='flex justify-between  items-center'>
+            <div className='tablet:flex tablet:flex-row grid grid-cols-2 gap-2 tablet:gap-0 justify-between  items-center'>
                 {
                     data.map((item) => (
                         <Link href={item.link} key={item.id} className='text-site-text-fundraiser_support_description underline text-[16px]'>
