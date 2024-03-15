@@ -53,7 +53,7 @@ export default function Home() {
             <GiveInTheNewsSection />
           </div>
         </div>
-        <div className="phone:mx-0 tablet:mx-10 laptop:mx-40 my-32">
+        <div className="phone:mx-0 tablet:mx-10 laptop:mx-40 tablet:my-32 px-4 tablet:px-0">
           <CommentsSection />
         </div>
         <div className="bg-[#FAF9F9] pt-20 relative">
