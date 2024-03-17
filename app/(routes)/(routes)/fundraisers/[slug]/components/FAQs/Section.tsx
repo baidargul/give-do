@@ -3,6 +3,7 @@ import Questions from './Questions'
 
 type Props = {}
 
+
 const FAQSection = (props: Props) => {
     return (
         <div className='tablet:px-40 pt-2 flex flex-col tablet:flex-row justify-between gap-5'>
