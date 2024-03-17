@@ -7,6 +7,7 @@ import Image from 'next/image'
 import BtnShare from '@/components/Site/Buttons/BtnShare'
 import NGOSection from './components/NGOSection'
 import TopRaisingNGOs from './components/TopRaisingNGOs'
+import NGOinCityCard from './components/NGOinCityCard'
 
 type Props = {}
 
@@ -43,6 +44,26 @@ const page = (props: Props) => {
                     </div>
                     <div className=''>
                         <TopRaisingNGOs />
+                    </div>
+                </div>
+
+                <div>
+                    <div className='text-[20px] font-semibold text-site-text-fundraiser_support_description'>FIND NGOs IN YOUR CITY</div>
+                    <div className='grid grid-cols-3 gap-5'>
+                        <NGOinCityCard city='Delhi'/>
+                        <NGOinCityCard city='Delhi'/>
+                        <NGOinCityCard city='Delhi'/>
+                        <NGOinCityCard city='Delhi'/>
+                        <NGOinCityCard city='Delhi'/>
+                        <NGOinCityCard city='Delhi'/>
+                        <NGOinCityCard city='Delhi'/>
+                        <NGOinCityCard city='Delhi'/>
+                        <NGOinCityCard city='Delhi'/>
+                        <NGOinCityCard city='Delhi'/>
+                        <NGOinCityCard city='Delhi'/>
+                        <NGOinCityCard city='Delhi'/>
+                        <NGOinCityCard city='Delhi'/>
+                        <NGOinCityCard city='Delhi'/>
                     </div>
                 </div>
             </div>
