@@ -1,12 +1,16 @@
 'use client'
 import React, { useEffect } from 'react'
-import Cause from './Cause'
 import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel'
 import Image from 'next/image'
+import Category from './Category'
+type Props = {
+    options: Options
+    defaultOption?: string
+}
 
-type Props = {}
+type Options = { title: string, image: string }[]
 
-const causes = [
+const causes: Options = [
     {
         title: "All Causes",
         image: "/causes/All"
@@ -61,18 +65,20 @@ const causes = [
     },
 ]
 
-const CausesSection = (props: Props) => {
+const CategoriesSection = (props: Props) => {
+    const [options, setOptions] = React.useState<Options>(props.options)
     const [isMounted, setIsMounted] = React.useState<boolean>(false)
-    const [selectedCause, setSelectedCause] = React.useState<string>('All Causes')
+    const [selectedCause, setSelectedCause] = React.useState<string>(props.defaultOption? props.defaultOption : '')
     const [api, setApi] = React.useState<any>()
+
 
     useEffect(() => {
         setIsMounted(true)
     }, [])
 
     const sectionArr = [];
-    for (let i = 0; i < causes.length; i += 7) {
-        sectionArr.push(causes.slice(i, i + 7));
+    for (let i = 0; i < options.length; i += 7) {
+        sectionArr.push(options.slice(i, i + 7));
     }
 
     const handlePreviousClick = () => {
@@ -83,6 +89,7 @@ const CausesSection = (props: Props) => {
     const handleNextClick = () => {
         api.scrollNext()
     }
+
 
     return (
         isMounted && <div className='w-full flex justify-between items-center gap-8'>
@@ -95,7 +102,7 @@ const CausesSection = (props: Props) => {
                         {sectionArr.map((section, index) => (
                             <CarouselItem key={index} className="flex justify-between items-center">
                                 {section.map((cause, causeIndex) => (
-                                    <Cause
+                                    <Category
                                         key={causeIndex}
                                         title={cause.title}
                                         image={cause.image}
@@ -113,6 +120,6 @@ const CausesSection = (props: Props) => {
             </div>
         </div>
     );
-};
+}
 
-export default CausesSection
+export default CategoriesSection

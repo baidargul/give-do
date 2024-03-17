@@ -5,6 +5,7 @@ import SiteLogo from '@/components/Site/Logo/SiteLogo'
 import HomePageNavItem from '@/components/Site/Menu/HomePageNavItem'
 import Seperator from '@/components/Site/Seperator/Seperator'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 type Props = {}
@@ -34,7 +35,7 @@ const forDonorsMenu = [
     },
     {
         title: "Donate to NGOs",
-        link: "#",
+        link: "/ngos/",
     },
     {
         title: "Monthly Missions",
@@ -63,7 +64,7 @@ const HomepageNav = (props: Props) => {
                         CSR
                     </div>
                     <div className='text-[18px] font-semibold text-site-text-tag_first_donor'>
-                        DIscover NGOs
+                            Discover NGOs
                     </div>
                     <div className='text-[18px] font-semibold text-site-text-tag_first_donor'>
                         <HomePageNavItem links={forAboutMenu}>
@@ -88,7 +89,7 @@ const HomepageNav = (props: Props) => {
                     </SheetProvider>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
