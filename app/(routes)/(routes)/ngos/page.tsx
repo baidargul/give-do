@@ -5,6 +5,7 @@ import CausesSection from '../fundraisers/components/Causes/CausesSection'
 import { Input } from '@/components/ui/input'
 import Image from 'next/image'
 import BtnShare from '@/components/Site/Buttons/BtnShare'
+import NGOSection from './components/NGOSection'
 
 type Props = {}
 
@@ -36,7 +37,7 @@ const page = (props: Props) => {
                     <CausesSection />
                 </div>
                 <div>
-                    
+                    <NGOSection />
                 </div>
             </div>
 
