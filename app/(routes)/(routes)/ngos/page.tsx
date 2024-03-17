@@ -56,11 +56,11 @@ const page = (props: Props) => {
                 <div>
                     <CausesSection />
                 </div>
-                <div className='flex w-full justify-between items-start mt-10'>
-                    <div className='w-[68%]'>
+                <div className='flex w-full gap-10 justify-between items-start mt-10'>
+                    <div className='w-[70%]'>
                         <NGOSection />
                     </div>
-                    <div className=''>
+                    <div className='w-[35%]'>
                         <TopRaisingNGOs />
                     </div>
                 </div>
