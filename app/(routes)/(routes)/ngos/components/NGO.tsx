@@ -14,13 +14,13 @@ type Props = {
 
 const NGO = (props: Props) => {
     return (
-        <div className='flex gap-6 items-start'>
+        <div className='flex gap-6 items-start w-fit'>
             <div className='w-[120px]'>
                 <div className='w-[120px] h-[120px] border rounded-md flex justify-center items-center'>
                     <Image src={`/ngo/${props.image}`} width={98.4} height={98.4} alt='ngo' />
                 </div>
             </div>
-            <div className='flex flex-col gap-2 w-[55%]'>
+            <div className='flex flex-col gap-2'>
                 <div className='text-[24px] font-semibold'>{props.title}</div>
                 <div className='text-[16px] text-site-text-fundraiser_support_description justify-between flex gap-1 items-center'>
                     <div className='flex gap-1 items-center'>

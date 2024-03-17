@@ -6,6 +6,7 @@ import { Input } from '@/components/ui/input'
 import Image from 'next/image'
 import BtnShare from '@/components/Site/Buttons/BtnShare'
 import NGOSection from './components/NGOSection'
+import TopRaisingNGOs from './components/TopRaisingNGOs'
 
 type Props = {}
 
@@ -36,8 +37,13 @@ const page = (props: Props) => {
                 <div>
                     <CausesSection />
                 </div>
-                <div>
-                    <NGOSection />
+                <div className='flex w-full justify-between items-start mt-10'>
+                    <div className='w-[68%]'>
+                        <NGOSection />
+                    </div>
+                    <div className=''>
+                        <TopRaisingNGOs />
+                    </div>
                 </div>
             </div>
 
